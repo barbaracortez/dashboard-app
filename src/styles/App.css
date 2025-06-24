@@ -14,7 +14,7 @@ body {
     height: 100vh;
 }
 
-.slidebar {
+.sidebar {
     width: 220px;
     background-color:#4e73df;
     color: white;
@@ -58,7 +58,7 @@ body {
 }
 
 .card:hover {
-    transform: translateY(-4);
+    transform: translateY(-4px);
 }
 
 .card h3 {
@@ -72,11 +72,16 @@ body {
     font-weight: bold;
 }
 
-.chart {
+.charts {
     margin-top: 40px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+}
+
+.charts > div {
+    flex:1;
+    min-width: 300px;
 }
 
 .header {
@@ -130,4 +135,53 @@ body {
 .stat-card-value {
     font-size: 24px;
     font-weight: bold;
+}
+
+.orders-table{
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.orders-table h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.estado {
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.estado.pendiente {
+    background-color: #f6c23e;
+    color:#fff
+}
+
+.estado.completado {
+    background-color: #1cc88a;
+    color:#fff;
+}
+
+.estado.cancelado {
+    background-color: #e74a3b;
+    color: #fff;
 }

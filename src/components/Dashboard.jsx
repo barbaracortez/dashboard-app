@@ -1,6 +1,7 @@
 import Card from './Card';
 import LineChartBox from './LineChartBox';
 import PierChartBox from './PieChartBox';
+import OrdersTable from './OrdersTable';
 
 function Dashboard () {
     return (
@@ -15,6 +16,7 @@ function Dashboard () {
                 <LineChartBox/>
                 <PierChartBox/>
             </div>
+            <OrdersTable/>
         </div>
     )
 }
