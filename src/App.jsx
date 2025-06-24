@@ -1,14 +1,29 @@
-import './styles/App.css';
-import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./styles/App.css";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./components/Dashboard";
+import Ventas from "./components/Ventas";
+import Clientes from "./components/Clientes";
+import Reportes from "./components/Reportes";
+import Header from './components/Header';
 
-function App () {
+function App() {
   return (
-    <div className="app">
-     <Sidebar/>
-     <Dashboard/> 
-    </div>
-  )
+    <BrowserRouter>
+      <div className="app">
+        <Sidebar />
+        <div className="content">
+          <Header/>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/ventas" element={<Ventas />} />
+            <Route path="/clientes" element={<Clientes />} />
+            <Route path="/reportes" element={<Reportes />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App; 
+export default App;
