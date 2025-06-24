@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../styles/App.css"; 
 
 function Sidebar() {
@@ -7,16 +7,36 @@ function Sidebar() {
       <h2>Mi Panel</h2>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Inicio
+          </NavLink>
         </li>
         <li>
-          <Link to="/ventas">Ventas</Link>
+          <NavLink
+            to="/ventas"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Ventas
+          </NavLink>
         </li>
         <li>
-          <Link to="/clientes">Clientes</Link>
+          <NavLink
+            to="/clientes"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Clientes
+          </NavLink>
         </li>
         <li>
-          <Link to="/reportes">Reportes</Link>
+          <NavLink
+            to="/reportes"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Reportes
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -12,7 +12,7 @@ function Dashboard () {
                 <Card title = "Usuarios Nuevos" amount = "58" color="#1cc88a"/>
                 <Card title = "Conversiones" amount = "12%" color="#36b9cc" />
             </div>
-            <div clasName="charts">
+            <div className="charts">
                 <LineChartBox/>
                 <PierChartBox/>
             </div>
