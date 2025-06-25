@@ -1,17 +1,65 @@
-<<<<<<< HEAD
-# React + Vite
+# 📊 Dashboard App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto en desarrollo de una **aplicación tipo dashboard administrativo** construida con **React** y **Vite**.
 
-Currently, two official plugins are available:
+El objetivo es practicar el desarrollo frontend creando una interfaz moderna y adaptable que simule un entorno real de gestión (como un panel de administración para CRM, e-commerce o servicios).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Estado del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# dashboard-app
- Hacer una app tipo dashboard (CRM / e-commerce / admin panel) desde cero.
->>>>>>> fbfe7f9f7ab798e0e20fb75038d0ea0b2f486ef6
+🔧 En desarrollo — actualmente trabajando en la maquetación inicial, navegación y estructura de componentes.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- React
+- Vite
+- JavaScript
+- CSS puro
+- React Router
+- Git & GitHub
+
+---
+
+## 🎯 Objetivos del proyecto
+
+- Aplicar conocimientos adquiridos en cursos de desarrollo web.
+- Simular un flujo de trabajo real con control de versiones (Git).
+- Practicar estructura de carpetas, componentes reutilizables y navegación con rutas.
+- Desarrollar una interfaz adaptable (responsive) con CSS puro.
+
+---
+
+## ✅ Tareas completadas
+
+- [x] Creación de estructura base con Vite
+- [x] Instalación de dependencias
+- [x] Configuración de React Router
+- [ ] Maquetación de secciones
+- [ ] Estilos CSS
+- [ ] Adaptabilidad (responsive design)
+- [ ] Componentes dinámicos
+- [ ] Conexión con base de datos o backend (opcional)
+
+---
+
+## 📌 Enlace al repositorio
+
+🔗 [https://github.com/barbaracortez/dashboard-app](https://github.com/barbaracortez/dashboard-app)
+
+---
+
+## 👩‍💻 Autor
+
+**Barbara Cortez**  
+📍 Maipú, Mendoza – Argentina  
+💼 Consultora Funcional CRM | Desarrolladora Web Jr  
+🔗 [LinkedIn](https://linkedin.com/in/barbara-cortez)  
+💻 [GitHub](https://github.com/barbaracortez)
+
+---
+
+> _Este proyecto es parte de mi proceso de formación como desarrolladora web. Estoy abierta a sugerencias, feedback y nuevas oportunidades 🚀_
+
