@@ -83,7 +83,7 @@ body {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(118, 209, 245);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba( 0, 0, 0, 0.1);
@@ -288,6 +288,67 @@ th, td {
     cursor: pointer;
     margin-right: 16px;
     color: #4e73df;
+}
+
+.estado.activo {
+    background-color: #1cc88a;
+    color: #fff;
+}
+
+.estado.inactivo {
+    background-color: #858796;
+    color: #fff;
+}
+
+.estado.pendiente {
+    background-color: #f6c23e;
+    color: #fff;
+}
+.orders-table button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s ease;
+}
+
+.orders-table button:hover {
+    background-color: #2e59d9;
+}
+
+.estado.generado {
+    background-color: #4e73df;
+    color: #fff;
+}
+
+.estado.pendiente {
+    background-color: #f6c23e;
+    color: #fff;
+}
+
+.estado.revisado {
+    background-color: #1cc88a;
+    color: #fff;
+}
+
+.orders-table button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background 0.2s ease;
+}
+
+.orders-table button:hover {
+    background-color: #2e59d9;
 }
 
 @media (max-width: 768px) {

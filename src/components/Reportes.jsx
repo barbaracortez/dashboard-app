@@ -1,3 +1,4 @@
+import ReportesTable from "./ReportesTable";
 
 function Reportes () {
     return (
@@ -17,6 +18,7 @@ function Reportes () {
             <p>3</p>
           </div>
         </div>
+        <ReportesTable/>
       </div>
     );
 }

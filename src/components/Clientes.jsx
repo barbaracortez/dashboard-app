@@ -1,4 +1,4 @@
-
+import ClientesTable from "./ClientesTable";
 
 function Clientes () {
     return (
@@ -18,6 +18,7 @@ function Clientes () {
                     <p>180</p>
                 </div>
             </div>
+            <ClientesTable/>
         </div>
     );
 }

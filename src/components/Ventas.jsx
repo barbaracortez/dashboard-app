@@ -1,4 +1,4 @@
-
+import VentasTable from "./VentasTable";
 
 function Ventas () {
     return (
@@ -18,6 +18,7 @@ function Ventas () {
                     <p>8</p>
                 </div>
             </div>
+            <VentasTable/>
         </div>
     );
 }
