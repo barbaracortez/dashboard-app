@@ -280,6 +280,16 @@ th, td {
     border-top: 1px solid #ddd;
 }
 
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 16px;
+    color: #4e73df;
+}
+
 @media (max-width: 768px) {
     .app {
         flex-direction: column;
@@ -321,5 +331,8 @@ th, td {
     }
     .search-input {
         width: 100%;
+    }
+    .menu-toggle {
+        display: block;
     }
 }

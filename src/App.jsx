@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "./styles/App.css";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./components/Dashboard";
@@ -9,12 +10,24 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 function App() {
+   const [ sidebarVisible, setSidebarVisible] = useState(true);
+
+   useEffect(()=>{
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+      setSidebarVisible(false);
+    }
+   }, []);
+   const toggleSidebar = () => {
+     setSidebarVisible(!sidebarVisible);
+   };
+  
   return (
     <BrowserRouter>
       <div className="app">
-        <Sidebar />
+        {sidebarVisible && <Sidebar />}
         <div className="content">
-          <Header />
+          <Header onToggleSidebar={toggleSidebar} />
           <div className="page-content">
             <Routes>
               <Route path="/" element={<Dashboard />} />
