@@ -1,16 +1,7 @@
-import { useEffect, useState } from "react";
 
-function VentasTable() {
-  const [ventas, setVentas] = useState([]);
 
-  useEffect(() => {
-    fetch("http://localhost:3000/ventas") 
-      .then((res) => res.json())
-      .then((data) => setVentas(data))
-      .catch((err) => console.error("Error al obtener ventas:", err));
-  }, []);
-
-  return (
+function VentasTable({ventas}) {
+    return (
     <div className="orders-table">
       <h3>Listado de Ventas</h3>
       <table>

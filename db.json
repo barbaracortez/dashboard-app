@@ -1,12 +1,73 @@
 {
-    "ventas": [
-      { "id": 1, "producto": "Laptop HP", "cantidad": 2, "total": 2400, "estado": "completado" },
-      { "id": 2, "producto": "Mouse Logitech", "cantidad": 5, "total": 150, "estado": "pendiente" },
-      { "id": 3, "producto": "Monitor Samsung", "cantidad": 1, "total": 300, "estado": "cancelado" }
-    ],
-    "reportes": [
-      { "id": 1, "tipo": "Ventas Mensuales", "fecha": "2025-06-10", "responsable": "Juan Pérez", "estado": "generado" },
-      { "id": 2, "tipo": "Clientes Nuevos", "fecha": "2025-06-15", "responsable": "Lucía Gómez", "estado": "pendiente" }
-    ]
-  }
-  
+  "ventas": [
+    {
+      "id": "1",
+      "producto": "Laptop HP",
+      "cantidad": 2,
+      "total": 2400,
+      "estado": "completado"
+    },
+    {
+      "id": "2",
+      "producto": "Mouse Logitech",
+      "cantidad": 5,
+      "total": 150,
+      "estado": "pendiente"
+    },
+    {
+      "id": "3",
+      "producto": "Monitor Samsung",
+      "cantidad": 1,
+      "total": 300,
+      "estado": "cancelado"
+    },
+    {
+      "id": "7a80",
+      "producto": "laptop",
+      "cantidad": 1,
+      "total": 14,
+      "fecha": "2025-06-26",
+      "estado": "pendiente"
+    },
+    {
+      "id": "d7c9",
+      "producto": "laptop",
+      "cantidad": 2,
+      "total": 1000000,
+      "fecha": "2025-06-26",
+      "estado": "pendiente"
+    },
+    {
+      "id": "c753",
+      "producto": "laptop",
+      "cantidad": 1,
+      "total": 100,
+      "fecha": "2025-06-26",
+      "estado": "pendiente"
+    },
+    {
+      "id": "9c78",
+      "producto": "casa",
+      "cantidad": 2,
+      "total": 3,
+      "fecha": "2025-06-26",
+      "estado": "pendiente"
+    }
+  ],
+  "reportes": [
+    {
+      "id": "1",
+      "tipo": "Ventas Mensuales",
+      "fecha": "2025-06-10",
+      "responsable": "Juan Pérez",
+      "estado": "generado"
+    },
+    {
+      "id": "2",
+      "tipo": "Clientes Nuevos",
+      "fecha": "2025-06-15",
+      "responsable": "Lucía Gómez",
+      "estado": "pendiente"
+    }
+  ]
+}
