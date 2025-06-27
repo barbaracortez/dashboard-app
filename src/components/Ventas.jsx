@@ -20,6 +20,29 @@ function Ventas () {
         return acumulador + (venta.total || 0);
     }, 0);
 
+    const hoy = new Date();
+    const mesActual = hoy.getMonth();
+    const añoActual = hoy.getFullYear();
+
+    const ventasDelMes = ventas.filter((venta) => {
+      if (!venta.fecha) return false;
+      const fechaVenta = new Date(venta.fecha);
+      return (
+        fechaVenta.getMonth() === mesActual &&
+        fechaVenta.getFullYear() === añoActual
+      );
+    });
+
+    const totalVentasMes = ventasDelMes.reduce(
+      (acc, venta) => acc + (venta.total || 0),
+      0
+    );
+
+    const pedidosPendientes = ventas.filter(
+        (venta) => venta.estado === "pendiente"
+    ).length;
+    
+
     return (
       <div className="dashboard">
         <h1>Panel de Ventas</h1>
@@ -30,11 +53,11 @@ function Ventas () {
           </div>
           <div className="card">
             <h3>Ventas del mes</h3>
-            <p>${totalGeneral}</p>
+            <p>${totalVentasMes}</p>
           </div>
           <div className="card">
             <h3>Pedidos Pendientes</h3>
-            <p>8</p>
+            <p>{pedidosPendientes}</p>
           </div>
         </div>
         <NuevaVentaForm onVentaAgregada={handleVentaAgregada} />
