@@ -52,6 +52,14 @@
       "total": 3,
       "fecha": "2025-06-26",
       "estado": "pendiente"
+    },
+    {
+      "id": "6c3c",
+      "producto": "casa dos",
+      "cantidad": 1,
+      "monto": 230,
+      "fecha": "2025-06-26",
+      "estado": "pendiente"
     }
   ],
   "reportes": [

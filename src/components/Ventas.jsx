@@ -15,17 +15,22 @@ function Ventas () {
     const handleVentaAgregada = (nuevaVenta) => {
       setVentas((prev) => [...prev, nuevaVenta]);
     };
+
+    const totalGeneral = ventas.reduce((acumulador, venta)=>{
+        return acumulador + (venta.total || 0);
+    }, 0);
+
     return (
       <div className="dashboard">
         <h1>Panel de Ventas</h1>
         <div className="cards">
           <div className="card">
             <h3>Total de Ventas</h3>
-            <p>$12.400</p>
+            <p>${totalGeneral}</p>
           </div>
           <div className="card">
             <h3>Ventas del mes</h3>
-            <p>$2.500</p>
+            <p>${totalGeneral}</p>
           </div>
           <div className="card">
             <h3>Pedidos Pendientes</h3>
