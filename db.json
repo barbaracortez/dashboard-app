@@ -130,6 +130,15 @@
       "estado": "nuevo",
       "fecha": "2025-06-28",
       "contacto": "Maca"
+    },
+    {
+      "id": "fe5a",
+      "nombre": "vea",
+      "email": "cortezbarbara.dev@gmail.com",
+      "fuente": "face",
+      "estado": "Contactado",
+      "fecha": "2025-06-28",
+      "contacto": "Barby"
     }
   ]
 }

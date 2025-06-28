@@ -20,9 +20,9 @@ function LeadsTable({ leads }) {
               <td>{lead.fuente}</td>
               <td>{lead.fecha}</td>
               <td>
-                <span className={`estado ${lead.estado?.toLowerCase()}`}>
-                  {lead.estado}
-                </span>
+                <td>
+                  <span className={`estado ${lead.estado}`}>{lead.estado}</span>
+                </td>
               </td>
             </tr>
           ))}

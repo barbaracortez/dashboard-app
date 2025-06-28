@@ -60,6 +60,21 @@ function NuevoLeadForm({onAgregar}) {
         value={form.fuente}
         onChange={handleChange}
       />
+      <input
+        type="text"
+        name="contacto"
+        placeholder="Contacto"
+        value={form.contacto}
+        onChange={handleChange}
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        value={form.email}
+        onChange={handleChange}
+      />
+
       <select name="estado" value={form.estado} onChange={handleChange}>
         <option value="Nuevo">Nuevo</option>
         <option value="Contactado">Contactado</option>
