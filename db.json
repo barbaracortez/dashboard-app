@@ -121,6 +121,15 @@
       "estado": "Calificado",
       "fecha": "2025-06-28",
       "contacto": "Barby"
+    },
+    {
+      "id": "5f3d",
+      "nombre": "uno",
+      "email": "",
+      "fuente": "linkedin",
+      "estado": "nuevo",
+      "fecha": "2025-06-28",
+      "contacto": "Maca"
     }
   ]
 }
