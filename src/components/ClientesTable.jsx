@@ -1,30 +1,6 @@
-function ClientesTable() {
-  const clientes = [
-    {
-      id: 1,
-      nombre: "Juan Pérez",
-      email: "juan@example.com",
-      estado: "Activo",
-    },
-    {
-      id: 2,
-      nombre: "Lucía Gómez",
-      email: "lucia@example.com",
-      estado: "Inactivo",
-    },
-    {
-      id: 3,
-      nombre: "Carlos Méndez",
-      email: "carlos@example.com",
-      estado: "Activo",
-    },
-    {
-      id: 4,
-      nombre: "Ana Torres",
-      email: "ana@example.com",
-      estado: "Pendiente",
-    },
-  ];
+
+
+function ClientesTable({clientes}) {
 
   return (
     <div className="orders-table">

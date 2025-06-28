@@ -383,6 +383,8 @@ th, td {
     background-color: #2e59d9;
 }
 
+
+
 @media (max-width: 768px) {
     .app {
         flex-direction: column;

@@ -1,6 +1,22 @@
+import { useState, useEffect } from "react";
 import ClientesTable from "./ClientesTable";
+import NuevoClienteForm from "./NuevoClienteForm";
 
 function Clientes () {
+    const [clientes, setClientes] = useState([]);
+
+        useEffect(() => {
+             fetch("http://localhost:3000/clientes")
+                .then((res) => res.json())
+                .then((data) => setClientes(data))
+                .catch((err) => console.error("Error al obtener clientes:", err));
+        }, []);
+
+    const handleClienteAgregado = (nuevo) => {
+        setClientes((prev) => [...prev, nuevo]);
+    };
+
+    
     return (
         <div className="dashboard">
             <h1>Panel de Clientes</h1>
@@ -18,7 +34,8 @@ function Clientes () {
                     <p>180</p>
                 </div>
             </div>
-            <ClientesTable/>
+            <NuevoClienteForm onClienteAgregado={handleClienteAgregado}/>
+            <ClientesTable clientes={clientes}/>
         </div>
     );
 }

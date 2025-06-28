@@ -8,6 +8,7 @@ import Clientes from "./components/Clientes";
 import Reportes from "./components/Reportes";
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Leads from "./components/Leads";
 
 function App() {
    const [ sidebarVisible, setSidebarVisible] = useState(true);
@@ -34,6 +35,7 @@ function App() {
               <Route path="/ventas" element={<Ventas />} />
               <Route path="/clientes" element={<Clientes />} />
               <Route path="/reportes" element={<Reportes />} />
+              <Route path="/leads" element={<Leads />} />
             </Routes>
           </div>
           <Footer />

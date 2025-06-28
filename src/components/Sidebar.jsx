@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import {  Link, NavLink } from "react-router-dom";
 import "../styles/App.css"; 
 
 function Sidebar() {
@@ -37,6 +37,9 @@ function Sidebar() {
           >
             Reportes
           </NavLink>
+        </li>
+        <li>
+          <Link to="/leads">Leads</Link>
         </li>
       </ul>
     </div>

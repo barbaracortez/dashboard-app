@@ -77,5 +77,50 @@
       "responsable": "Lucía Gómez",
       "estado": "pendiente"
     }
+  ],
+  "clientes": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez",
+      "email": "juanperez@example.com",
+      "telefono": "1234567890",
+      "estado": "activo"
+    },
+    {
+      "id": "2",
+      "nombre": "Lucía Gómez",
+      "email": "luciagomez@example.com",
+      "telefono": "0987654321",
+      "estado": "inactivo"
+    },
+    {
+      "id": "bbba",
+      "nombre": "Bárbara ",
+      "email": "cortezbarbara.dev@gmail.com",
+      "estado": "Activo"
+    }
+  ],
+  "leads": [
+    {
+      "id": 1,
+      "nombre": "Empresa ABC",
+      "contacto": "Juan Pérez",
+      "estado": "Nuevo"
+    },
+    {
+      "id": 2,
+      "nombre": "Compañía XYZ",
+      "contacto": "Lucía Gómez",
+      "estado": "Contactado"
+    },
+    {
+      "id": "638c",
+      "nombre": "cr",
+      "email": "",
+      "fuente": "face",
+      "estado": "Calificado",
+      "fecha": "2025-06-28",
+      "contacto": "Barby"
+    }
   ]
 }
