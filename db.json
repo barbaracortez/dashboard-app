@@ -157,10 +157,10 @@
       "estado": "Ganada"
     },
     {
-      "id": "ea8b",
+      "id": "ac4b",
       "cliente": "Barby",
       "producto": "laptop",
-      "monto": "300",
+      "monto": "100",
       "estado": "En negociación"
     }
   ]

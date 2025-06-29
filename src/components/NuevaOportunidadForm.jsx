@@ -1,12 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function NuevaOportunidadForm({ onAgregar }) {
+function NuevaOportunidadForm({
+  onAgregar,
+  oportunidadEditando,
+  setOportunidadEditando,
+}) {
   const [form, setForm] = useState({
     cliente: "",
     producto: "",
     monto: "",
     estado: "En negociación",
   });
+
+  useEffect(() => {
+    if (oportunidadEditando) {
+      setForm(oportunidadEditando);
+    } else {
+      // Reset cuando no se edita nada
+      setForm({
+        cliente: "",
+        producto: "",
+        monto: "",
+        estado: "En negociación",
+      });
+    }
+  }, [oportunidadEditando]);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -15,25 +33,45 @@ function NuevaOportunidadForm({ onAgregar }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:3000/oportunidades", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(form),
-    })
-      .then((res) => res.json())
-      .then((nuevaOportunidad) => {
-        onAgregar(nuevaOportunidad);
-        setForm({
-          cliente: "",
-          producto: "",
-          monto: "",
-          estado: "En negociación",
+    if (oportunidadEditando) {
+      // Modo edición
+      fetch(`http://localhost:3000/oportunidades/${oportunidadEditando.id}`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      })
+        .then((res) => res.json())
+        .then(() => {
+          alert("Oportunidad actualizada");
+          setOportunidadEditando(null);
         });
-      });
+    } else {
+      // Modo creación
+      fetch("http://localhost:3000/oportunidades", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      })
+        .then((res) => res.json())
+        .then((nueva) => {
+          onAgregar(nueva);
+          alert("Oportunidad agregada");
+        });
+    }
+
+    // Reset
+    setForm({
+      cliente: "",
+      producto: "",
+      monto: "",
+      estado: "En negociación",
+    });
   };
 
   return (
     <form onSubmit={handleSubmit} className="formulario">
+      <h3>{oportunidadEditando ? "Editar" : "Nueva"} Oportunidad</h3>
+
       <input
         type="text"
         name="cliente"
@@ -63,7 +101,21 @@ function NuevaOportunidadForm({ onAgregar }) {
         <option value="Ganada">Ganada</option>
         <option value="Perdida">Perdida</option>
       </select>
-      <button type="submit">Agregar Oportunidad</button>
+
+      <button type="submit">
+        {oportunidadEditando ? "Guardar Cambios" : "Agregar Oportunidad"}
+      </button>
+
+      {oportunidadEditando && (
+        <button
+          type="button"
+          onClick={() => {
+            setOportunidadEditando(null);
+          }}
+        >
+          Cancelar edición
+        </button>
+      )}
     </form>
   );
 }

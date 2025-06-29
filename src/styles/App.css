@@ -458,6 +458,39 @@ th, td {
     border-radius: 0.375rem;
     cursor: pointer;
 }
+.estado {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.estado.ganada {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.estado.perdida {
+    background-color: #ffcdd2;
+    color: #c62828;
+}
+
+.estado.en-negociacion {
+    background-color: #bbdefb;
+    color: #1565c0;
+}
+
+button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
 
 @media (max-width: 768px) {
     .app {
