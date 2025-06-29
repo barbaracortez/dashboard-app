@@ -140,5 +140,28 @@
       "fecha": "2025-06-28",
       "contacto": "Barby"
     }
+  ],
+  "oportunidades": [
+    {
+      "id": 1,
+      "cliente": "Juan Pérez",
+      "producto": "Laptop HP",
+      "monto": 2400,
+      "estado": "En negociación"
+    },
+    {
+      "id": 2,
+      "cliente": "Lucía Gómez",
+      "producto": "Monitor Samsung",
+      "monto": 300,
+      "estado": "Ganada"
+    },
+    {
+      "id": "ea8b",
+      "cliente": "Barby",
+      "producto": "laptop",
+      "monto": "300",
+      "estado": "En negociación"
+    }
   ]
 }

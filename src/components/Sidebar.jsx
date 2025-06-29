@@ -41,6 +41,9 @@ function Sidebar() {
         <li>
           <Link to="/leads">Leads</Link>
         </li>
+        <li>
+          <Link to="/oportunidades">Oportunidades</Link>
+        </li>
       </ul>
     </div>
   );
