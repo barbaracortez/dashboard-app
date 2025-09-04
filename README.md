@@ -1,65 +1,34 @@
-# 📊 Dashboard App
 
-Este es un proyecto en desarrollo de una **aplicación tipo dashboard administrativo** construida con **React** y **Vite**.
+# Dashboard App
 
-El objetivo es practicar el desarrollo frontend creando una interfaz moderna y adaptable que simule un entorno real de gestión (como un panel de administración para CRM, e-commerce o servicios).
+Panel administrativo construido en **React + Vite**, con navegación vía **React Router** y diseño responsive en **CSS puro**.
 
----
+## 🚀 Demo
+👉 [Demo en GitHub Pages](https://barbaracortez.github.io/dashboard-app/) *(se activa cuando hagas el deploy)*
 
-## 🚀 Estado del proyecto
+## 🎯 Objetivos de aprendizaje
+- Configuración de Vite y React Router
+- Arquitectura de componentes reutilizables
+- Diseño responsive sin librerías CSS
+- Estructura de carpetas escalable
 
-🔧 En desarrollo — actualmente trabajando en la maquetación inicial, navegación y estructura de componentes.
+## ✨ Características
+- Maquetación base del panel con rutas y estados
+- Navegación entre secciones
+- Layout responsive adaptable a escritorio y móvil
+- Conexión simulada (ej. con `db.json` o API)
 
----
-
-## 🛠️ Tecnologías utilizadas
-
-- React
-- Vite
-- JavaScript
-- CSS puro
+## 🛠️ Stack
+- React (con hooks)
+- Vite como bundler
+- JavaScript moderno (ES6+)
 - React Router
-- Git & GitHub
+- CSS puro
 
----
-
-## 🎯 Objetivos del proyecto
-
-- Aplicar conocimientos adquiridos en cursos de desarrollo web.
-- Simular un flujo de trabajo real con control de versiones (Git).
-- Practicar estructura de carpetas, componentes reutilizables y navegación con rutas.
-- Desarrollar una interfaz adaptable (responsive) con CSS puro.
-
----
-
-## ✅ Tareas completadas
-
-- [x] Creación de estructura base con Vite
-- [x] Instalación de dependencias
-- [x] Configuración de React Router
-- [ ] Maquetación de secciones
-- [ ] Estilos CSS
-- [ ] Adaptabilidad (responsive design)
-- [ ] Componentes dinámicos
-- [ ] Conexión con base de datos o backend (opcional)
-
----
-
-## 📌 Enlace al repositorio
-
-🔗 [https://github.com/barbaracortez/dashboard-app](https://github.com/barbaracortez/dashboard-app)
-
----
-
-## 👩‍💻 Autor
-
-**Barbara Cortez**  
-📍 Maipú, Mendoza – Argentina  
-💼 Consultora Funcional CRM | Desarrolladora Web Jr  
-🔗 [LinkedIn](https://linkedin.com/in/barbara-cortez)  
-💻 [GitHub](https://github.com/barbaracortez)
-
----
-
-> _Este proyecto es parte de mi proceso de formación como desarrolladora web. Estoy abierta a sugerencias, feedback y nuevas oportunidades 🚀_
+## 📦 Instalación y uso
+```bash
+git clone https://github.com/barbaracortez/dashboard-app.git
+cd dashboard-app
+npm install
+npm run dev
 
