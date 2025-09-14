@@ -10,6 +10,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Leads from "./components/Leads";
 import Oportunidades from "./components/Oportunidades";
+import Login from "./pages/Login";
+import PrivateRoute from "./components/PrivateRouter";
 
 function App() {
    const [ sidebarVisible, setSidebarVisible] = useState(true);
@@ -32,12 +34,57 @@ function App() {
           <Header onToggleSidebar={toggleSidebar} />
           <div className="page-content">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/ventas" element={<Ventas />} />
-              <Route path="/clientes" element={<Clientes />} />
-              <Route path="/reportes" element={<Reportes />} />
-              <Route path="/leads" element={<Leads />} />
-              <Route path="/oportunidades" element={<Oportunidades/>}/>
+              <Route path="/login" element={<Login />} />
+
+              {/* Rutas privadas */}
+              <Route
+                path="/"
+                element={
+                  <PrivateRoute>
+                    <Dashboard />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/ventas"
+                element={
+                  <PrivateRoute>
+                    <Ventas />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/clientes"
+                element={
+                  <PrivateRoute>
+                    <Clientes />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/reportes"
+                element={
+                  <PrivateRoute>
+                    <Reportes />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/leads"
+                element={
+                  <PrivateRoute>
+                    <Leads />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="/oportunidades"
+                element={
+                  <PrivateRoute>
+                    <Oportunidades />
+                  </PrivateRoute>
+                }
+              />
             </Routes>
           </div>
           <Footer />
