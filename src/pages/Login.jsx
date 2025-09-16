@@ -1,8 +1,7 @@
-// src/pages/Login.jsx
 import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-import './Login.css';
+import "./Login.css";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -15,7 +14,7 @@ export default function Login() {
     e.preventDefault();
     const success = login(username, password);
     if (success) {
-      navigate("/dashboard"); // 👈 Redirige al dashboard si el login es correcto
+      navigate("/dashboard");
     } else {
       setError("Usuario o contraseña incorrectos");
     }
@@ -23,23 +22,25 @@ export default function Login() {
 
   return (
     <div className="login-container">
-      <h2>Iniciar Sesión</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Usuario"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Contraseña"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button type="submit">Ingresar</button>
-      </form>
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      <div className="login-card">
+        <h2>Iniciar Sesión</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Usuario"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Contraseña"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button type="submit">Ingresar</button>
+        </form>
+        {error && <p className="error">{error}</p>}
+      </div>
     </div>
   );
 }
