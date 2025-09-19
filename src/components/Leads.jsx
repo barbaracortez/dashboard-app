@@ -6,10 +6,10 @@ function Leads() {
     const [leads, setLeads] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:3000/leads")
-            .then((res)=> res.json())
-            .then((data)=> setLeads(data))
-            .then((err)=> console.error("Error al obtener leads:", err));
+        fetch("http://localhost:5000/leads")
+          .then((res) => res.json())
+          .then((data) => setLeads(data))
+          .then((err) => console.error("Error al obtener leads:", err));
     }, []);
 
     const handleNuevoLead = (nuevo) => {

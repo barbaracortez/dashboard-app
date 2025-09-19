@@ -7,7 +7,7 @@ function Oportunidades() {
   const [oportunidadEditando, setOportunidadEditando] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3000/oportunidades")
+    fetch("http://localhost:5000/oportunidades")
       .then((res) => res.json())
       .then((data) => setOportunidades(data))
       .catch((err) => console.error("Error:", err));

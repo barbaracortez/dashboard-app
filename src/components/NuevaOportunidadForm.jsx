@@ -16,7 +16,7 @@ function NuevaOportunidadForm({
 
   // 🔹 Traer clientes
   useEffect(() => {
-    fetch("http://localhost:3000/clientes")
+    fetch("http://localhost:5000/clientes")
       .then((res) => res.json())
       .then((data) => setClientes(data))
       .catch((err) => console.error("Error al cargar clientes:", err));
@@ -37,8 +37,8 @@ function NuevaOportunidadForm({
     e.preventDefault();
 
     const url = oportunidadEditando
-      ? `http://localhost:3000/oportunidades/${oportunidadEditando.id}`
-      : "http://localhost:3000/oportunidades";
+      ? `http://localhost:5000/oportunidades${oportunidadEditando.id}`
+      : "http://localhost:5000/oportunidades";
 
     const method = oportunidadEditando ? "PUT" : "POST";
 

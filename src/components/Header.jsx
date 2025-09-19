@@ -29,7 +29,6 @@ function Header({ onToggleSidebar }) {
         <button className="menu-toggle" onClick={onToggleSidebar}>
           ☰
         </button>
-        <h1>¡Hola, Barbara!</h1>
       </div>
       <div className="header-right">
         <input type="text" placeholder="Buscar..." className="search-input" />

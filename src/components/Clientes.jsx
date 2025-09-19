@@ -6,10 +6,12 @@ function Clientes () {
     const [clientes, setClientes] = useState([]);
 
         useEffect(() => {
-             fetch("http://localhost:3000/clientes")
-                .then((res) => res.json())
-                .then((data) => setClientes(data))
-                .catch((err) => console.error("Error al obtener clientes:", err));
+             fetch("http://localhost:5000/clientes")
+               .then((res) => res.json())
+               .then((data) => setClientes(data))
+               .catch((err) =>
+                 console.error("Error al obtener clientes:", err)
+               );
         }, []);
 
     const handleClienteAgregado = (nuevo) => {

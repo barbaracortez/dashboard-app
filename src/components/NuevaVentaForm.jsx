@@ -22,7 +22,7 @@ function NuevaVentaForm({ onVentaAgregada }) {
     };
 
     try {
-      const res = await fetch("http://localhost:3000/ventas", {
+      const res = await fetch("http://localhost:5000/ventas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

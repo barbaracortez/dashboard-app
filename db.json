@@ -60,6 +60,22 @@
       "monto": 230,
       "fecha": "2025-06-26",
       "estado": "pendiente"
+    },
+    {
+      "id": "8e2e",
+      "producto": "laptome",
+      "cantidad": 3,
+      "monto": 5,
+      "fecha": "2025-09-18",
+      "estado": "pendiente"
+    },
+    {
+      "id": "e293",
+      "producto": "dsfds",
+      "cantidad": 5,
+      "monto": 0,
+      "fecha": "2025-09-18",
+      "estado": "pendiente"
     }
   ],
   "reportes": [
@@ -110,17 +126,23 @@
       "nombre": "Bárbara ",
       "email": "cortezbarbara24@gmail.com",
       "estado": "Inactivo"
+    },
+    {
+      "id": "d48a",
+      "nombre": "g",
+      "email": "maria@dos.gmail.com",
+      "estado": "Inactivo"
     }
   ],
   "leads": [
     {
-      "id": 1,
+      "id": "1",
       "nombre": "Empresa ABC",
       "contacto": "Juan Pérez",
       "estado": "Nuevo"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "Compañía XYZ",
       "contacto": "Lucía Gómez",
       "estado": "Contactado"
@@ -151,18 +173,27 @@
       "estado": "Contactado",
       "fecha": "2025-06-28",
       "contacto": "Barby"
+    },
+    {
+      "id": "dd1e",
+      "nombre": "sefs",
+      "email": "gig@gmail.com",
+      "fuente": "instagram",
+      "estado": "Contactado",
+      "fecha": "2025-09-18",
+      "contacto": "gigi"
     }
   ],
   "oportunidades": [
     {
-      "id": 1,
+      "id": "1",
       "cliente": "Juan Pérez",
       "producto": "Laptop HP",
       "monto": 2400,
       "estado": "En negociación"
     },
     {
-      "id": 2,
+      "id": "2",
       "cliente": "Lucía Gómez",
       "producto": "Monitor Samsung",
       "monto": 300,
@@ -174,6 +205,13 @@
       "producto": "laptop",
       "monto": "100",
       "estado": "En negociación"
+    },
+    {
+      "id": "7b17",
+      "cliente": "Bárbara ",
+      "producto": "laptop",
+      "monto": "4444",
+      "estado": "Ganada"
     }
   ]
 }

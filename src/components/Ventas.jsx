@@ -2,11 +2,12 @@ import VentasTable from "./VentasTable";
 import NuevaVentaForm from "./NuevaVentaForm";
 import { useState, useEffect } from "react";
 
+
 function Ventas () {
     const [ventas, setVentas] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:3000/ventas")
+      fetch("http://localhost:5000/ventas")
         .then((res) => res.json())
         .then((data) => setVentas(data))
         .catch((err) => console.error("Error al obtener ventas:", err));

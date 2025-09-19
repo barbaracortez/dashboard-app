@@ -4,7 +4,7 @@ function ReportesTable() {
   const [reportes, setReportes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/reportes")
+    fetch("http://localhost:5000/reportes")
       .then((res) => res.json())
       .then((data) => setReportes(data))
       .catch((err) => console.error("Error al obtener reportes:", err));
