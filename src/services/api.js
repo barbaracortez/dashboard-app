@@ -1,60 +1,84 @@
-const API_URL = "http://localhost:5000";
+// Capa de datos.
+// - Por defecto funciona en "modo demo": los datos viven en localStorage y se
+//   inicializan con datos de ejemplo. No necesita backend, ideal para deploy estático.
+// - Si se define VITE_API_URL (ej. http://localhost:5000), usa esa API REST
+//   (compatible con json-server).
 
-async function request(endpoint, options = {}){
-    try {
-        const response = await fetch(`${API_URL}${endpoint}`, {
-            headers:{"Content-Type": "application/json"},
-            ...options,
-        });
-        if(!response.ok) throw new Error("Error en la API");
-        return await response.json();
-    } catch(error){
-        console.error("API error:", error);
-        throw error;
-    }
+import { generateSeed } from "../data/seed";
+
+const API_URL = import.meta.env.VITE_API_URL?.replace(/\/$/, "");
+const STORAGE_KEY = "crm-demo-db-v1";
+const LATENCY = 250;
+
+export const isDemoMode = !API_URL;
+
+// ---------- Modo remoto ----------
+async function http(path, options = {}) {
+  const res = await fetch(`${API_URL}/${path}`, {
+    headers: { "Content-Type": "application/json" },
+    ...options,
+  });
+  if (!res.ok) throw new Error(`Error ${res.status} al llamar a la API`);
+  return res.status === 204 ? null : res.json();
 }
 
+// ---------- Modo demo ----------
+function readDb() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (raw) return JSON.parse(raw);
+  } catch {
+    // localStorage no disponible o datos corruptos: se regenera
+  }
+  const seed = generateSeed();
+  writeDb(seed);
+  return seed;
+}
 
-export const getVentas = () => request("ventas");
-export const getVenta = (id) => request(`ventas/${id}`);
-export const createVentas = (data) => 
-    request("ventas", { method: "POST", body: JSON.stringify(data)});
-export const updateVenta = (id, data) => 
-    request(`ventas/${id}`,{method:"PUT", body: JSON.stringify(data)});
-export const deleteVenta = (id) => 
-    request(`ventas/${id}`, {method: "DELETE"});
+function writeDb(db) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
+  } catch {
+    // Sin persistencia disponible (modo privado): se trabaja en memoria
+  }
+  memoryDb = db;
+}
 
-export const getClientes = () => request("clientes");
-export const getCliente = (id) => request(`clientes/${id}`);
-export const createCliente = (data) =>
-  request("clientes", { method: "POST", body: JSON.stringify(data) });
-export const updateCliente = (id, data) =>
-  request(`clientes/${id}`, { method: "PUT", body: JSON.stringify(data) });
-export const deleteCliente = (id) =>
-  request(`clientes/${id}`, { method: "DELETE" });
+let memoryDb = null;
+const db = () => memoryDb ?? readDb();
+const delay = (value) => new Promise((resolve) => setTimeout(() => resolve(value), LATENCY));
+const newId = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
 
-export const getReportes = () => request("reportes");
-export const getReporte = (id) => request(`reportes/${id}`);
-export const createReporte = (data) =>
-  request("reportes", { method: "POST", body: JSON.stringify(data) });
-export const updateReporte = (id, data) =>
-  request(`reportes/${id}`, { method: "PUT", body: JSON.stringify(data) });
-export const deleteReporte = (id) =>
-  request(`reportes/${id}`, { method: "DELETE" });
+const local = {
+  list: (col) => delay(structuredClone(db()[col] ?? [])),
+  create: (col, data) => {
+    const current = db();
+    const item = { ...data, id: newId() };
+    writeDb({ ...current, [col]: [item, ...current[col]] });
+    return delay(item);
+  },
+  update: (col, id, data) => {
+    const current = db();
+    const item = { ...data, id };
+    writeDb({ ...current, [col]: current[col].map((x) => (x.id === id ? item : x)) });
+    return delay(item);
+  },
+  remove: (col, id) => {
+    const current = db();
+    writeDb({ ...current, [col]: current[col].filter((x) => x.id !== id) });
+    return delay(null);
+  },
+};
 
-export const getLeads = () => request("leads");
-export const getLead = (id) => request(`leads/${id}`);
-export const createLead = (data) =>
-  request("leads", { method: "POST", body: JSON.stringify(data) });
-export const updateLead = (id, data) =>
-  request(`leads/${id}`, { method: "PUT", body: JSON.stringify(data) });
-export const deleteLead = (id) => request(`leads/${id}`, { method: "DELETE" });
+const remote = {
+  list: (col) => http(col),
+  create: (col, data) => http(col, { method: "POST", body: JSON.stringify(data) }),
+  update: (col, id, data) => http(`${col}/${id}`, { method: "PUT", body: JSON.stringify(data) }),
+  remove: (col, id) => http(`${col}/${id}`, { method: "DELETE" }),
+};
 
-export const getOportunidades = () => request("oportunidades");
-export const getOportunidad = (id) => request(`oportunidades/${id}`);
-export const createOportunidad = (data) =>
-  request("oportunidades", { method: "POST", body: JSON.stringify(data) });
-export const updateOportunidad = (id, data) =>
-  request(`oportunidades/${id}`, { method: "PUT", body: JSON.stringify(data) });
-export const deleteOportunidad = (id) =>
-  request(`oportunidades/${id}`, { method: "DELETE" });
+export const api = isDemoMode ? local : remote;
+
+export function resetDemoData() {
+  writeDb(generateSeed());
+}
