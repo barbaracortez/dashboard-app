@@ -7,7 +7,7 @@ import PageHeader from "../components/ui/PageHeader";
 import StatCard from "../components/ui/StatCard";
 import Badge from "../components/ui/Badge";
 import { HBarChart, TrendChart } from "../components/charts/Charts";
-import { groupSum, ingresos, monthlyRevenue, ventasDelMes } from "../utils/analytics";
+import { groupSum, ingresos, monthlyRevenue, ventasDelMes, ventasMesAnteriorAlDia } from "../utils/analytics";
 import { delta, formatCompactMoney, formatDate, formatMoney, formatNumber, formatPercent, sum } from "../utils/format";
 import { ESTADOS } from "../data/seed";
 
@@ -38,7 +38,7 @@ export default function Dashboard() {
 
   const stats = useMemo(() => {
     const mes = ventasDelMes(ventas.items, 0);
-    const prev = ventasDelMes(ventas.items, 1);
+    const prev = ventasMesAnteriorAlDia(ventas.items);
     const abiertas = oportunidades.items.filter((o) => ABIERTAS.includes(o.etapa));
     const ganadas = oportunidades.items.filter((o) => o.etapa === "Ganada").length;
     const perdidas = oportunidades.items.filter((o) => o.etapa === "Perdida").length;
@@ -81,14 +81,14 @@ export default function Dashboard() {
       />
 
       <div className="kpi-grid">
-        <StatCard label="Ingresos del mes" value={formatMoney(stats.ingresosMes)} icon={DollarSign} change={stats.ingresosDelta} hint="vs. mes anterior" loading={loading} />
-        <StatCard label="Ventas del mes" value={formatNumber(stats.ventasMes)} icon={ShoppingCart} change={stats.ventasDelta} hint="vs. mes anterior" loading={loading} />
+        <StatCard label="Ingresos del mes" value={formatMoney(stats.ingresosMes)} icon={DollarSign} change={stats.ingresosDelta} hint="vs. mismo período del mes anterior" loading={loading} />
+        <StatCard label="Ventas del mes" value={formatNumber(stats.ventasMes)} icon={ShoppingCart} change={stats.ventasDelta} hint="vs. mismo período del mes anterior" loading={loading} />
         <StatCard label="Pipeline abierto" value={formatMoney(stats.pipeline)} icon={Target} hint={`${stats.abiertas} oportunidades · ${formatPercent(stats.winRate)} de cierre`} loading={loading} />
         <StatCard label="Clientes activos" value={formatNumber(stats.clientesActivos)} icon={Users} hint={`de ${stats.clientesTotal} registrados`} loading={loading} />
       </div>
 
       <div className="grid-2-1">
-        <ChartCard title="Ingresos mensuales" subtitle={`Ventas completadas · últimos 12 meses · ${formatCompactMoney(totalAnual)} en total`}>
+        <ChartCard title="Ingresos mensuales" subtitle={`Ventas completadas · últimos 12 meses cerrados · ${formatCompactMoney(totalAnual)} en total`}>
           {loading ? <div className="skeleton skeleton-chart" /> : <TrendChart data={revenue} dataKey="ingresos" name="Ingresos" />}
         </ChartCard>
         <ChartCard title="Pipeline por etapa" subtitle="Monto de oportunidades abiertas" action={<Link className="link" to="/oportunidades">Ver <ArrowRight size={14} /></Link>}>

@@ -2,10 +2,10 @@ import { MONTHS, parseDate, sum } from "./format";
 
 const monthKey = (d) => `${d.getFullYear()}-${d.getMonth()}`;
 
-// Ingresos (ventas completadas) agrupados por mes, últimos `n` meses.
+// Ingresos (ventas completadas) agrupados por mes: los últimos `n` meses cerrados.
 export function monthlyRevenue(ventas, n = 12, today = new Date()) {
   const buckets = [];
-  for (let i = n - 1; i >= 0; i--) {
+  for (let i = n; i >= 1; i--) {
     const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
     buckets.push({ key: monthKey(d), label: `${MONTHS[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`, ingresos: 0, ventas: 0 });
   }
@@ -27,6 +27,11 @@ export function ventasDelMes(ventas, offset = 0, today = new Date()) {
     const d = parseDate(v.fecha);
     return d.getFullYear() === ref.getFullYear() && d.getMonth() === ref.getMonth();
   });
+}
+
+// Ventas del mes anterior hasta el mismo día del mes (comparación justa con el mes en curso)
+export function ventasMesAnteriorAlDia(ventas, today = new Date()) {
+  return ventasDelMes(ventas, 1, today).filter((v) => parseDate(v.fecha).getDate() <= today.getDate());
 }
 
 export const completadas = (ventas) => ventas.filter((v) => v.estado === "Completada");

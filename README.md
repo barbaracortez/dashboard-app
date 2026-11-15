@@ -2,9 +2,26 @@
 
 Dashboard de gestión comercial (CRM) construido con **React 19 + Vite**. Permite seguir ventas, clientes, leads, oportunidades y reportes, con métricas y gráficos calculados en tiempo real a partir de los datos.
 
-> **Proyecto demo.** Funciona sin backend: los datos de ejemplo se generan y guardan en el navegador (localStorage). Opcionalmente se conecta a una API REST con json-server.
+### [▶ Ver demo en vivo](https://barbaracortez.github.io/dashboard-app/)
 
 **Acceso demo:** `demo@nexocrm.app` / `demo1234`. La pantalla de login también tiene un botón "Usar" que completa los datos.
+
+> Funciona sin backend: los datos de ejemplo se generan y guardan en el navegador (localStorage), así que podés crear, editar y borrar registros libremente. Desde **Configuración → Restablecer datos** volvés al estado inicial. Opcionalmente se conecta a una API REST con json-server.
+
+![Dashboard](docs/screenshots/dashboard.png)
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/ventas.png" alt="Módulo de ventas" /></td>
+    <td><img src="docs/screenshots/oportunidades.png" alt="Embudo de oportunidades" /></td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/dashboard-dark.png" alt="Tema oscuro" /></td>
+    <td><img src="docs/screenshots/login.png" alt="Login" /></td>
+  </tr>
+</table>
+
+<p align="center"><img src="docs/screenshots/mobile.png" alt="Vista mobile" width="280" /></p>
 
 ---
 
@@ -67,6 +84,7 @@ La URL de la API se configura con la variable `VITE_API_URL` (ver `.env.example`
 | `npm run build` | Build de producción en `dist/` |
 | `npm run preview` | Sirve el build localmente |
 | `npm run lint` | Análisis estático |
+| `npm run deploy` | Publica la demo en GitHub Pages |
 
 ## Estructura
 
@@ -91,7 +109,10 @@ Cada módulo se define de forma **declarativa** (columnas, campos del formulario
 
 ## Deploy
 
-El proyecto incluye `vercel.json` y `public/_redirects` para que el ruteo SPA funcione en **Vercel** y **Netlify**. Como el modo demo no necesita backend, alcanza con:
+**GitHub Pages** (deploy actual):
 
-- **Build command:** `npm run build`
-- **Output directory:** `dist`
+```bash
+npm run deploy   # build con base /dashboard-app/ y publicación en la rama gh-pages
+```
+
+También está preparado para **Vercel** y **Netlify** (`vercel.json` y `public/_redirects`). Como el modo demo no necesita backend, alcanza con build command `npm run build` y output directory `dist`.

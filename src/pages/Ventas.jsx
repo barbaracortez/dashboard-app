@@ -5,7 +5,7 @@ import ResourcePage from "../components/ResourcePage";
 import StatCard from "../components/ui/StatCard";
 import Badge from "../components/ui/Badge";
 import { ESTADOS, PRODUCTOS } from "../data/seed";
-import { completadas, ingresos, ventasDelMes } from "../utils/analytics";
+import { completadas, ingresos, ventasDelMes, ventasMesAnteriorAlDia } from "../utils/analytics";
 import { delta, formatDate, formatMoney, formatNumber, todayIso } from "../utils/format";
 
 export default function Ventas() {
@@ -57,7 +57,7 @@ export default function Ventas() {
   );
 
   const mes = ventasDelMes(items, 0);
-  const prev = ventasDelMes(items, 1);
+  const prev = ventasMesAnteriorAlDia(items);
   const comp = completadas(items);
   const ticket = comp.length ? ingresos(items) / comp.length : 0;
   const pendientes = items.filter((v) => v.estado === "Pendiente");
@@ -65,7 +65,7 @@ export default function Ventas() {
   const kpis = (
     <>
       <StatCard label="Facturación total" value={formatMoney(ingresos(items))} icon={DollarSign} hint={`${comp.length} ventas completadas`} loading={collection.loading} />
-      <StatCard label="Facturación del mes" value={formatMoney(ingresos(mes))} icon={TrendingUp} change={delta(ingresos(mes), ingresos(prev))} hint="vs. mes anterior" loading={collection.loading} />
+      <StatCard label="Facturación del mes" value={formatMoney(ingresos(mes))} icon={TrendingUp} change={delta(ingresos(mes), ingresos(prev))} hint="vs. mismo período del mes anterior" loading={collection.loading} />
       <StatCard label="Ticket promedio" value={formatMoney(ticket)} icon={Receipt} loading={collection.loading} />
       <StatCard label="Pendientes de cobro" value={formatNumber(pendientes.length)} icon={Clock} hint={formatMoney(pendientes.reduce((a, v) => a + v.total, 0))} loading={collection.loading} />
     </>

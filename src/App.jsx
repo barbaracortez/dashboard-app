@@ -26,9 +26,12 @@ const page = (Component) => (
   </Suspense>
 );
 
+// Permite servir la app desde un subpath (ej. GitHub Pages: /dashboard-app/)
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "");
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route

@@ -7,7 +7,7 @@
 import { generateSeed } from "../data/seed";
 
 const API_URL = import.meta.env.VITE_API_URL?.replace(/\/$/, "");
-const STORAGE_KEY = "crm-demo-db-v1";
+const STORAGE_KEY = "crm-demo-db-v2";
 const LATENCY = 250;
 
 export const isDemoMode = !API_URL;

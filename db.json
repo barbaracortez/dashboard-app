@@ -243,368 +243,48 @@
   ],
   "ventas": [
     {
-      "id": "136",
-      "fecha": "2026-11-15",
-      "cliente": "Zenit Telecom",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
+      "id": "144",
+      "fecha": "2026-11-11",
+      "cliente": "Kora Textil",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
       "estado": "Completada"
     },
     {
-      "id": "133",
-      "fecha": "2026-11-14",
-      "cliente": "Andes Logística",
+      "id": "145",
+      "fecha": "2026-11-11",
+      "cliente": "Grupo Litoral",
       "producto": "Plan CRM Business",
       "cantidad": 3,
       "precioUnitario": 1290,
       "total": 3870,
-      "estado": "Pendiente"
+      "estado": "Completada"
     },
     {
-      "id": "122",
-      "fecha": "2026-11-13",
-      "cliente": "Brisa Turismo",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "132",
-      "fecha": "2026-11-13",
-      "cliente": "Zenit Telecom",
+      "id": "143",
+      "fecha": "2026-11-09",
+      "cliente": "Umbral Consultores",
       "producto": "Plan CRM Business",
       "cantidad": 1,
       "precioUnitario": 1290,
       "total": 1290,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "125",
-      "fecha": "2026-11-11",
-      "cliente": "Mosaico Diseño",
-      "producto": "Módulo de Analítica",
-      "cantidad": 3,
-      "precioUnitario": 750,
-      "total": 2250,
       "estado": "Completada"
     },
     {
-      "id": "137",
-      "fecha": "2026-11-11",
-      "cliente": "Grupo Litoral",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "126",
-      "fecha": "2026-11-10",
-      "cliente": "Mosaico Diseño",
-      "producto": "Capacitación del equipo",
-      "cantidad": 2,
-      "precioUnitario": 600,
-      "total": 1200,
-      "estado": "Completada"
-    },
-    {
-      "id": "131",
-      "fecha": "2026-11-10",
-      "cliente": "Cumbre Software",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Completada"
-    },
-    {
-      "id": "128",
-      "fecha": "2026-11-08",
-      "cliente": "Horizonte Energía",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "130",
+      "id": "141",
       "fecha": "2026-11-06",
-      "cliente": "Nexo Retail",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
-    },
-    {
-      "id": "134",
-      "fecha": "2026-11-06",
-      "cliente": "Faro Seguros",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
-    },
-    {
-      "id": "123",
-      "fecha": "2026-11-05",
-      "cliente": "Vértice Industrial",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "124",
-      "fecha": "2026-11-04",
-      "cliente": "Mosaico Diseño",
-      "producto": "Plan CRM Starter",
-      "cantidad": 2,
-      "precioUnitario": 490,
-      "total": 980,
-      "estado": "Completada"
-    },
-    {
-      "id": "135",
-      "fecha": "2026-11-04",
-      "cliente": "Júpiter Foods",
-      "producto": "Plan CRM Starter",
-      "cantidad": 1,
-      "precioUnitario": 490,
-      "total": 490,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "127",
-      "fecha": "2026-11-02",
-      "cliente": "Ícaro Media",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "129",
-      "fecha": "2026-11-01",
-      "cliente": "Grupo Litoral",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "110",
-      "fecha": "2026-10-16",
-      "cliente": "Norte Construcciones",
-      "producto": "Módulo de Analítica",
-      "cantidad": 2,
-      "precioUnitario": 750,
-      "total": 1500,
-      "estado": "Completada"
-    },
-    {
-      "id": "112",
-      "fecha": "2026-10-12",
-      "cliente": "Ícaro Media",
-      "producto": "Plan CRM Starter",
-      "cantidad": 4,
-      "precioUnitario": 490,
-      "total": 1960,
-      "estado": "Completada"
-    },
-    {
-      "id": "120",
-      "fecha": "2026-10-12",
-      "cliente": "Umbral Consultores",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Completada"
-    },
-    {
-      "id": "119",
-      "fecha": "2026-10-10",
-      "cliente": "Pampa Agro",
-      "producto": "Plan CRM Starter",
-      "cantidad": 1,
-      "precioUnitario": 490,
-      "total": 490,
-      "estado": "Completada"
-    },
-    {
-      "id": "121",
-      "fecha": "2026-10-08",
-      "cliente": "Andes Logística",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 1,
-      "precioUnitario": 1800,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "118",
-      "fecha": "2026-10-05",
       "cliente": "Cumbre Software",
       "producto": "Módulo de Analítica",
-      "cantidad": 3,
+      "cantidad": 1,
       "precioUnitario": 750,
-      "total": 2250,
+      "total": 750,
       "estado": "Completada"
     },
     {
-      "id": "113",
-      "fecha": "2026-10-04",
-      "cliente": "Norte Construcciones",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
-    },
-    {
-      "id": "114",
-      "fecha": "2026-10-01",
-      "cliente": "Delta Salud",
-      "producto": "Capacitación del equipo",
-      "cantidad": 1,
-      "precioUnitario": 600,
-      "total": 600,
-      "estado": "Completada"
-    },
-    {
-      "id": "109",
-      "fecha": "2026-09-27",
-      "cliente": "Prisma Finanzas",
-      "producto": "Módulo de Analítica",
-      "cantidad": 2,
-      "precioUnitario": 750,
-      "total": 1500,
-      "estado": "Completada"
-    },
-    {
-      "id": "108",
-      "fecha": "2026-09-26",
-      "cliente": "Horizonte Energía",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Completada"
-    },
-    {
-      "id": "111",
-      "fecha": "2026-09-26",
-      "cliente": "Nexo Retail",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Completada"
-    },
-    {
-      "id": "117",
-      "fecha": "2026-09-21",
-      "cliente": "Faro Seguros",
-      "producto": "Plan CRM Business",
-      "cantidad": 4,
-      "precioUnitario": 1290,
-      "total": 5160,
-      "estado": "Completada"
-    },
-    {
-      "id": "115",
-      "fecha": "2026-09-20",
-      "cliente": "Grupo Litoral",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
-    },
-    {
-      "id": "116",
-      "fecha": "2026-09-19",
-      "cliente": "Pampa Agro",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 1,
-      "precioUnitario": 1800,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "107",
-      "fecha": "2026-09-14",
-      "cliente": "Brisa Turismo",
-      "producto": "Módulo de Analítica",
-      "cantidad": 4,
-      "precioUnitario": 750,
-      "total": 3000,
-      "estado": "Completada"
-    },
-    {
-      "id": "98",
-      "fecha": "2026-09-08",
-      "cliente": "Vértice Industrial",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 1,
-      "precioUnitario": 1800,
-      "total": 1800,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "101",
-      "fecha": "2026-09-06",
-      "cliente": "Lumen Educación",
-      "producto": "Plan CRM Business",
-      "cantidad": 4,
-      "precioUnitario": 1290,
-      "total": 5160,
-      "estado": "Completada"
-    },
-    {
-      "id": "96",
-      "fecha": "2026-09-03",
-      "cliente": "Brisa Turismo",
-      "producto": "Plan CRM Starter",
-      "cantidad": 2,
-      "precioUnitario": 490,
-      "total": 980,
-      "estado": "Completada"
-    },
-    {
-      "id": "97",
-      "fecha": "2026-09-02",
-      "cliente": "Zenit Telecom",
-      "producto": "Plan CRM Enterprise",
-      "cantidad": 1,
-      "precioUnitario": 3900,
-      "total": 3900,
-      "estado": "Completada"
-    },
-    {
-      "id": "100",
-      "fecha": "2026-09-02",
-      "cliente": "Ícaro Media",
-      "producto": "Capacitación del equipo",
-      "cantidad": 2,
-      "precioUnitario": 600,
-      "total": 1200,
-      "estado": "Completada"
-    },
-    {
-      "id": "105",
-      "fecha": "2026-08-26",
+      "id": "142",
+      "fecha": "2026-11-06",
       "cliente": "Kora Textil",
       "producto": "Plan CRM Enterprise",
       "cantidad": 1,
@@ -613,39 +293,429 @@
       "estado": "Completada"
     },
     {
-      "id": "106",
-      "fecha": "2026-08-26",
+      "id": "139",
+      "fecha": "2026-11-05",
+      "cliente": "Júpiter Foods",
+      "producto": "Plan CRM Starter",
+      "cantidad": 1,
+      "precioUnitario": 490,
+      "total": 490,
+      "estado": "Completada"
+    },
+    {
+      "id": "140",
+      "fecha": "2026-11-04",
+      "cliente": "Grupo Litoral",
+      "producto": "Plan CRM Starter",
+      "cantidad": 1,
+      "precioUnitario": 490,
+      "total": 490,
+      "estado": "Completada"
+    },
+    {
+      "id": "137",
+      "fecha": "2026-11-01",
+      "cliente": "Lumen Educación",
+      "producto": "Plan CRM Starter",
+      "cantidad": 1,
+      "precioUnitario": 490,
+      "total": 490,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "138",
+      "fecha": "2026-11-01",
+      "cliente": "Ícaro Media",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "136",
+      "fecha": "2026-10-30",
+      "cliente": "Nexo Retail",
+      "producto": "Plan CRM Business",
+      "cantidad": 3,
+      "precioUnitario": 1290,
+      "total": 3870,
+      "estado": "Completada"
+    },
+    {
+      "id": "135",
+      "fecha": "2026-10-29",
+      "cliente": "Brisa Turismo",
+      "producto": "Plan CRM Business",
+      "cantidad": 1,
+      "precioUnitario": 1290,
+      "total": 1290,
+      "estado": "Completada"
+    },
+    {
+      "id": "134",
+      "fecha": "2026-10-28",
+      "cliente": "Grupo Litoral",
+      "producto": "Plan CRM Starter",
+      "cantidad": 2,
+      "precioUnitario": 490,
+      "total": 980,
+      "estado": "Completada"
+    },
+    {
+      "id": "132",
+      "fecha": "2026-10-27",
+      "cliente": "Grupo Litoral",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 2,
+      "precioUnitario": 1800,
+      "total": 3600,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "133",
+      "fecha": "2026-10-27",
+      "cliente": "Umbral Consultores",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "130",
+      "fecha": "2026-10-21",
+      "cliente": "Júpiter Foods",
+      "producto": "Plan CRM Starter",
+      "cantidad": 2,
+      "precioUnitario": 490,
+      "total": 980,
+      "estado": "Completada"
+    },
+    {
+      "id": "131",
+      "fecha": "2026-10-21",
+      "cliente": "Horizonte Energía",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "129",
+      "fecha": "2026-10-18",
+      "cliente": "Umbral Consultores",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "128",
+      "fecha": "2026-10-13",
+      "cliente": "Delta Salud",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "127",
+      "fecha": "2026-10-11",
+      "cliente": "Mosaico Diseño",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "126",
+      "fecha": "2026-10-09",
+      "cliente": "Delta Salud",
+      "producto": "Módulo de Analítica",
+      "cantidad": 3,
+      "precioUnitario": 750,
+      "total": 2250,
+      "estado": "Completada"
+    },
+    {
+      "id": "125",
+      "fecha": "2026-10-06",
+      "cliente": "Pampa Agro",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "123",
+      "fecha": "2026-10-02",
+      "cliente": "Nexo Retail",
+      "producto": "Plan CRM Business",
+      "cantidad": 1,
+      "precioUnitario": 1290,
+      "total": 1290,
+      "estado": "Completada"
+    },
+    {
+      "id": "124",
+      "fecha": "2026-10-02",
+      "cliente": "Brisa Turismo",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "122",
+      "fecha": "2026-10-01",
+      "cliente": "Júpiter Foods",
+      "producto": "Plan CRM Starter",
+      "cantidad": 2,
+      "precioUnitario": 490,
+      "total": 980,
+      "estado": "Completada"
+    },
+    {
+      "id": "121",
+      "fecha": "2026-09-26",
+      "cliente": "Umbral Consultores",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "120",
+      "fecha": "2026-09-25",
+      "cliente": "Pampa Agro",
+      "producto": "Plan CRM Starter",
+      "cantidad": 1,
+      "precioUnitario": 490,
+      "total": 490,
+      "estado": "Completada"
+    },
+    {
+      "id": "119",
+      "fecha": "2026-09-24",
+      "cliente": "Cumbre Software",
+      "producto": "Módulo de Analítica",
+      "cantidad": 3,
+      "precioUnitario": 750,
+      "total": 2250,
+      "estado": "Completada"
+    },
+    {
+      "id": "118",
+      "fecha": "2026-09-20",
+      "cliente": "Faro Seguros",
+      "producto": "Plan CRM Business",
+      "cantidad": 3,
+      "precioUnitario": 1290,
+      "total": 3870,
+      "estado": "Completada"
+    },
+    {
+      "id": "117",
+      "fecha": "2026-09-18",
+      "cliente": "Pampa Agro",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 1,
+      "precioUnitario": 1800,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "116",
+      "fecha": "2026-09-16",
+      "cliente": "Grupo Litoral",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "115",
+      "fecha": "2026-09-14",
+      "cliente": "Delta Salud",
+      "producto": "Capacitación del equipo",
+      "cantidad": 1,
+      "precioUnitario": 600,
+      "total": 600,
+      "estado": "Completada"
+    },
+    {
+      "id": "114",
+      "fecha": "2026-09-12",
+      "cliente": "Norte Construcciones",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "113",
+      "fecha": "2026-09-09",
+      "cliente": "Ícaro Media",
+      "producto": "Plan CRM Starter",
+      "cantidad": 3,
+      "precioUnitario": 490,
+      "total": 1470,
+      "estado": "Completada"
+    },
+    {
+      "id": "112",
+      "fecha": "2026-09-07",
+      "cliente": "Nexo Retail",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "110",
+      "fecha": "2026-09-04",
+      "cliente": "Prisma Finanzas",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
+      "estado": "Completada"
+    },
+    {
+      "id": "111",
+      "fecha": "2026-09-04",
+      "cliente": "Norte Construcciones",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
+      "estado": "Completada"
+    },
+    {
+      "id": "109",
+      "fecha": "2026-09-01",
+      "cliente": "Horizonte Energía",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "107",
+      "fecha": "2026-08-29",
       "cliente": "Nexo Retail",
       "producto": "Módulo de Analítica",
-      "cantidad": 2,
+      "cantidad": 1,
       "precioUnitario": 750,
-      "total": 1500,
+      "total": 750,
+      "estado": "Completada"
+    },
+    {
+      "id": "108",
+      "fecha": "2026-08-28",
+      "cliente": "Brisa Turismo",
+      "producto": "Módulo de Analítica",
+      "cantidad": 3,
+      "precioUnitario": 750,
+      "total": 2250,
+      "estado": "Completada"
+    },
+    {
+      "id": "106",
+      "fecha": "2026-08-25",
+      "cliente": "Kora Textil",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "104",
+      "fecha": "2026-08-24",
+      "cliente": "Prisma Finanzas",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "105",
+      "fecha": "2026-08-24",
+      "cliente": "Pampa Agro",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
       "estado": "Completada"
     },
     {
       "id": "103",
       "fecha": "2026-08-23",
-      "cliente": "Prisma Finanzas",
-      "producto": "Capacitación del equipo",
-      "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "104",
-      "fecha": "2026-08-23",
-      "cliente": "Pampa Agro",
-      "producto": "Capacitación del equipo",
-      "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
+      "cliente": "Óptica Visión",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
       "estado": "Completada"
     },
     {
       "id": "102",
-      "fecha": "2026-08-22",
-      "cliente": "Óptica Visión",
+      "fecha": "2026-08-18",
+      "cliente": "Lumen Educación",
+      "producto": "Plan CRM Business",
+      "cantidad": 3,
+      "precioUnitario": 1290,
+      "total": 3870,
+      "estado": "Completada"
+    },
+    {
+      "id": "101",
+      "fecha": "2026-08-17",
+      "cliente": "Ícaro Media",
+      "producto": "Capacitación del equipo",
+      "cantidad": 1,
+      "precioUnitario": 600,
+      "total": 600,
+      "estado": "Completada"
+    },
+    {
+      "id": "100",
+      "fecha": "2026-08-14",
+      "cliente": "Brisa Turismo",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 2,
+      "precioUnitario": 1800,
+      "total": 3600,
+      "estado": "Completada"
+    },
+    {
+      "id": "99",
+      "fecha": "2026-08-12",
+      "cliente": "Vértice Industrial",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 1,
+      "precioUnitario": 1800,
+      "total": 1800,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "98",
+      "fecha": "2026-08-10",
+      "cliente": "Zenit Telecom",
       "producto": "Módulo de Analítica",
       "cantidad": 2,
       "precioUnitario": 750,
@@ -653,8 +723,128 @@
       "estado": "Completada"
     },
     {
-      "id": "99",
-      "fecha": "2026-08-19",
+      "id": "96",
+      "fecha": "2026-08-09",
+      "cliente": "Óptica Visión",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "97",
+      "fecha": "2026-08-09",
+      "cliente": "Ícaro Media",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
+      "estado": "Completada"
+    },
+    {
+      "id": "95",
+      "fecha": "2026-08-06",
+      "cliente": "Nexo Retail",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
+      "id": "94",
+      "fecha": "2026-08-05",
+      "cliente": "Grupo Litoral",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "93",
+      "fecha": "2026-08-01",
+      "cliente": "Brisa Turismo",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "92",
+      "fecha": "2026-07-29",
+      "cliente": "Nexo Retail",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 3,
+      "precioUnitario": 1800,
+      "total": 5400,
+      "estado": "Completada"
+    },
+    {
+      "id": "91",
+      "fecha": "2026-07-28",
+      "cliente": "Lumen Educación",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "90",
+      "fecha": "2026-07-27",
+      "cliente": "Andes Logística",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
+      "estado": "Completada"
+    },
+    {
+      "id": "89",
+      "fecha": "2026-07-22",
+      "cliente": "Zenit Telecom",
+      "producto": "Plan CRM Business",
+      "cantidad": 3,
+      "precioUnitario": 1290,
+      "total": 3870,
+      "estado": "Completada"
+    },
+    {
+      "id": "86",
+      "fecha": "2026-07-19",
+      "cliente": "Lumen Educación",
+      "producto": "Plan CRM Starter",
+      "cantidad": 1,
+      "precioUnitario": 490,
+      "total": 490,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "87",
+      "fecha": "2026-07-19",
+      "cliente": "Norte Construcciones",
+      "producto": "Capacitación del equipo",
+      "cantidad": 1,
+      "precioUnitario": 600,
+      "total": 600,
+      "estado": "Completada"
+    },
+    {
+      "id": "88",
+      "fecha": "2026-07-19",
+      "cliente": "Zenit Telecom",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 2,
+      "precioUnitario": 1800,
+      "total": 3600,
+      "estado": "Completada"
+    },
+    {
+      "id": "85",
+      "fecha": "2026-07-11",
       "cliente": "Brisa Turismo",
       "producto": "Soporte Premium (anual)",
       "cantidad": 3,
@@ -664,38 +854,8 @@
     },
     {
       "id": "84",
-      "fecha": "2026-08-17",
-      "cliente": "Brisa Turismo",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 4,
-      "precioUnitario": 1800,
-      "total": 7200,
-      "estado": "Completada"
-    },
-    {
-      "id": "91",
-      "fecha": "2026-08-17",
-      "cliente": "Nexo Retail",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 4,
-      "precioUnitario": 1800,
-      "total": 7200,
-      "estado": "Completada"
-    },
-    {
-      "id": "88",
-      "fecha": "2026-08-13",
-      "cliente": "Zenit Telecom",
-      "producto": "Plan CRM Business",
-      "cantidad": 3,
-      "precioUnitario": 1290,
-      "total": 3870,
-      "estado": "Completada"
-    },
-    {
-      "id": "93",
-      "fecha": "2026-08-12",
-      "cliente": "Grupo Litoral",
+      "fecha": "2026-07-06",
+      "cliente": "Mosaico Diseño",
       "producto": "Soporte Premium (anual)",
       "cantidad": 3,
       "precioUnitario": 1800,
@@ -703,29 +863,19 @@
       "estado": "Completada"
     },
     {
-      "id": "94",
-      "fecha": "2026-08-11",
-      "cliente": "Nexo Retail",
-      "producto": "Capacitación del equipo",
+      "id": "83",
+      "fecha": "2026-07-02",
+      "cliente": "Júpiter Foods",
+      "producto": "Plan CRM Business",
       "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
+      "precioUnitario": 1290,
+      "total": 3870,
       "estado": "Completada"
     },
     {
-      "id": "90",
-      "fecha": "2026-08-04",
-      "cliente": "Lumen Educación",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
-    },
-    {
-      "id": "89",
-      "fecha": "2026-08-02",
-      "cliente": "Andes Logística",
+      "id": "82",
+      "fecha": "2026-07-01",
+      "cliente": "Pampa Agro",
       "producto": "Módulo de Analítica",
       "cantidad": 1,
       "precioUnitario": 750,
@@ -734,108 +884,8 @@
     },
     {
       "id": "81",
-      "fecha": "2026-07-28",
-      "cliente": "Pampa Agro",
-      "producto": "Módulo de Analítica",
-      "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
-      "estado": "Completada"
-    },
-    {
-      "id": "87",
-      "fecha": "2026-07-27",
-      "cliente": "Zenit Telecom",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 2,
-      "precioUnitario": 1800,
-      "total": 3600,
-      "estado": "Completada"
-    },
-    {
-      "id": "95",
-      "fecha": "2026-07-24",
+      "fecha": "2026-06-30",
       "cliente": "Óptica Visión",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
-    },
-    {
-      "id": "86",
-      "fecha": "2026-07-23",
-      "cliente": "Norte Construcciones",
-      "producto": "Capacitación del equipo",
-      "cantidad": 1,
-      "precioUnitario": 600,
-      "total": 600,
-      "estado": "Completada"
-    },
-    {
-      "id": "92",
-      "fecha": "2026-07-22",
-      "cliente": "Faro Seguros",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
-    },
-    {
-      "id": "82",
-      "fecha": "2026-07-21",
-      "cliente": "Júpiter Foods",
-      "producto": "Plan CRM Business",
-      "cantidad": 4,
-      "precioUnitario": 1290,
-      "total": 5160,
-      "estado": "Completada"
-    },
-    {
-      "id": "85",
-      "fecha": "2026-07-21",
-      "cliente": "Lumen Educación",
-      "producto": "Plan CRM Starter",
-      "cantidad": 1,
-      "precioUnitario": 490,
-      "total": 490,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "83",
-      "fecha": "2026-07-19",
-      "cliente": "Mosaico Diseño",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 4,
-      "precioUnitario": 1800,
-      "total": 7200,
-      "estado": "Completada"
-    },
-    {
-      "id": "74",
-      "fecha": "2026-07-16",
-      "cliente": "Grupo Litoral",
-      "producto": "Capacitación del equipo",
-      "cantidad": 2,
-      "precioUnitario": 600,
-      "total": 1200,
-      "estado": "Completada"
-    },
-    {
-      "id": "79",
-      "fecha": "2026-07-16",
-      "cliente": "Nexo Retail",
-      "producto": "Módulo de Analítica",
-      "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
-      "estado": "Completada"
-    },
-    {
-      "id": "68",
-      "fecha": "2026-07-12",
-      "cliente": "Cumbre Software",
       "producto": "Plan CRM Enterprise",
       "cantidad": 1,
       "precioUnitario": 3900,
@@ -843,79 +893,69 @@
       "estado": "Completada"
     },
     {
-      "id": "69",
-      "fecha": "2026-07-08",
-      "cliente": "Norte Construcciones",
-      "producto": "Módulo de Analítica",
-      "cantidad": 3,
-      "precioUnitario": 750,
-      "total": 2250,
-      "estado": "Completada"
-    },
-    {
       "id": "80",
-      "fecha": "2026-07-06",
-      "cliente": "Óptica Visión",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 2,
-      "precioUnitario": 1800,
-      "total": 3600,
-      "estado": "Completada"
-    },
-    {
-      "id": "71",
-      "fecha": "2026-07-05",
+      "fecha": "2026-06-27",
       "cliente": "Horizonte Energía",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
-    },
-    {
-      "id": "70",
-      "fecha": "2026-07-02",
-      "cliente": "Cumbre Software",
-      "producto": "Módulo de Analítica",
-      "cantidad": 2,
-      "precioUnitario": 750,
-      "total": 1500,
-      "estado": "Completada"
-    },
-    {
-      "id": "72",
-      "fecha": "2026-07-01",
-      "cliente": "Zenit Telecom",
       "producto": "Plan CRM Business",
-      "cantidad": 4,
+      "cantidad": 2,
       "precioUnitario": 1290,
-      "total": 5160,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "79",
+      "fecha": "2026-06-25",
+      "cliente": "Nexo Retail",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
       "estado": "Completada"
     },
     {
       "id": "77",
-      "fecha": "2026-06-30",
-      "cliente": "Pampa Agro",
-      "producto": "Plan CRM Starter",
+      "fecha": "2026-06-20",
+      "cliente": "Lumen Educación",
+      "producto": "Integración ERP",
       "cantidad": 1,
-      "precioUnitario": 490,
-      "total": 490,
+      "precioUnitario": 2200,
+      "total": 2200,
       "estado": "Completada"
     },
     {
       "id": "78",
-      "fecha": "2026-06-30",
+      "fecha": "2026-06-20",
+      "cliente": "Lumen Educación",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "76",
+      "fecha": "2026-06-18",
       "cliente": "Andes Logística",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Cancelada"
+    },
+    {
+      "id": "74",
+      "fecha": "2026-06-13",
+      "cliente": "Grupo Litoral",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 1,
+      "precioUnitario": 1800,
+      "total": 1800,
       "estado": "Completada"
     },
     {
       "id": "75",
-      "fecha": "2026-06-29",
-      "cliente": "Mosaico Diseño",
+      "fecha": "2026-06-13",
+      "cliente": "Horizonte Energía",
       "producto": "Plan CRM Enterprise",
       "cantidad": 1,
       "precioUnitario": 3900,
@@ -924,8 +964,28 @@
     },
     {
       "id": "73",
-      "fecha": "2026-06-21",
-      "cliente": "Umbral Consultores",
+      "fecha": "2026-06-06",
+      "cliente": "Lumen Educación",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 3,
+      "precioUnitario": 1800,
+      "total": 5400,
+      "estado": "Completada"
+    },
+    {
+      "id": "72",
+      "fecha": "2026-06-03",
+      "cliente": "Zenit Telecom",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
+      "id": "71",
+      "fecha": "2026-06-01",
+      "cliente": "Óptica Visión",
       "producto": "Módulo de Analítica",
       "cantidad": 3,
       "precioUnitario": 750,
@@ -933,19 +993,109 @@
       "estado": "Completada"
     },
     {
-      "id": "76",
-      "fecha": "2026-06-19",
-      "cliente": "Júpiter Foods",
-      "producto": "Plan CRM Starter",
-      "cantidad": 4,
-      "precioUnitario": 490,
-      "total": 1960,
+      "id": "70",
+      "fecha": "2026-05-31",
+      "cliente": "Ícaro Media",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
+      "id": "69",
+      "fecha": "2026-05-27",
+      "cliente": "Kora Textil",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "67",
+      "fecha": "2026-05-24",
+      "cliente": "Brisa Turismo",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
+      "id": "68",
+      "fecha": "2026-05-24",
+      "cliente": "Delta Salud",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
       "estado": "Completada"
     },
     {
       "id": "66",
-      "fecha": "2026-06-18",
+      "fecha": "2026-05-21",
+      "cliente": "Júpiter Foods",
+      "producto": "Plan CRM Business",
+      "cantidad": 1,
+      "precioUnitario": 1290,
+      "total": 1290,
+      "estado": "Completada"
+    },
+    {
+      "id": "65",
+      "fecha": "2026-05-20",
+      "cliente": "Lumen Educación",
+      "producto": "Módulo de Analítica",
+      "cantidad": 3,
+      "precioUnitario": 750,
+      "total": 2250,
+      "estado": "Completada"
+    },
+    {
+      "id": "64",
+      "fecha": "2026-05-18",
+      "cliente": "Ícaro Media",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 1,
+      "precioUnitario": 1800,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "63",
+      "fecha": "2026-05-16",
+      "cliente": "Faro Seguros",
+      "producto": "Módulo de Analítica",
+      "cantidad": 2,
+      "precioUnitario": 750,
+      "total": 1500,
+      "estado": "Completada"
+    },
+    {
+      "id": "62",
+      "fecha": "2026-05-12",
       "cliente": "Norte Construcciones",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 1,
+      "precioUnitario": 1800,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "61",
+      "fecha": "2026-05-08",
+      "cliente": "Umbral Consultores",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "60",
+      "fecha": "2026-05-06",
+      "cliente": "Zenit Telecom",
       "producto": "Capacitación del equipo",
       "cantidad": 3,
       "precioUnitario": 600,
@@ -953,39 +1103,19 @@
       "estado": "Completada"
     },
     {
-      "id": "62",
-      "fecha": "2026-06-10",
-      "cliente": "Horizonte Energía",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
-    },
-    {
-      "id": "63",
-      "fecha": "2026-06-10",
-      "cliente": "Zenit Telecom",
+      "id": "59",
+      "fecha": "2026-05-01",
+      "cliente": "Mosaico Diseño",
       "producto": "Plan CRM Enterprise",
       "cantidad": 1,
       "precioUnitario": 3900,
       "total": 3900,
-      "estado": "Cancelada"
-    },
-    {
-      "id": "59",
-      "fecha": "2026-06-09",
-      "cliente": "Prisma Finanzas",
-      "producto": "Plan CRM Starter",
-      "cantidad": 3,
-      "precioUnitario": 490,
-      "total": 1470,
       "estado": "Completada"
     },
     {
-      "id": "64",
-      "fecha": "2026-06-09",
-      "cliente": "Júpiter Foods",
+      "id": "58",
+      "fecha": "2026-04-30",
+      "cliente": "Kora Textil",
       "producto": "Plan CRM Starter",
       "cantidad": 2,
       "precioUnitario": 490,
@@ -994,28 +1124,8 @@
     },
     {
       "id": "57",
-      "fecha": "2026-05-31",
-      "cliente": "Nexo Retail",
-      "producto": "Módulo de Analítica",
-      "cantidad": 2,
-      "precioUnitario": 750,
-      "total": 1500,
-      "estado": "Completada"
-    },
-    {
-      "id": "58",
-      "fecha": "2026-05-31",
-      "cliente": "Vértice Industrial",
-      "producto": "Capacitación del equipo",
-      "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "67",
-      "fecha": "2026-05-31",
-      "cliente": "Nexo Retail",
+      "fecha": "2026-04-27",
+      "cliente": "Delta Salud",
       "producto": "Integración ERP",
       "cantidad": 1,
       "precioUnitario": 2200,
@@ -1023,48 +1133,18 @@
       "estado": "Completada"
     },
     {
-      "id": "65",
-      "fecha": "2026-05-25",
-      "cliente": "Brisa Turismo",
-      "producto": "Capacitación del equipo",
-      "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "61",
-      "fecha": "2026-05-24",
-      "cliente": "Brisa Turismo",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 3,
-      "precioUnitario": 1800,
-      "total": 5400,
-      "estado": "Completada"
-    },
-    {
-      "id": "60",
-      "fecha": "2026-05-23",
+      "id": "56",
+      "fecha": "2026-04-21",
       "cliente": "Faro Seguros",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Cancelada"
-    },
-    {
-      "id": "48",
-      "fecha": "2026-05-15",
-      "cliente": "Grupo Litoral",
-      "producto": "Capacitación del equipo",
-      "cantidad": 2,
-      "precioUnitario": 600,
-      "total": 1200,
+      "producto": "Plan CRM Business",
+      "cantidad": 3,
+      "precioUnitario": 1290,
+      "total": 3870,
       "estado": "Completada"
     },
     {
       "id": "55",
-      "fecha": "2026-05-15",
+      "fecha": "2026-04-17",
       "cliente": "Grupo Litoral",
       "producto": "Plan CRM Business",
       "cantidad": 2,
@@ -1073,18 +1153,18 @@
       "estado": "Completada"
     },
     {
-      "id": "47",
-      "fecha": "2026-05-13",
-      "cliente": "Pampa Agro",
-      "producto": "Integración ERP",
+      "id": "53",
+      "fecha": "2026-04-12",
+      "cliente": "Mosaico Diseño",
+      "producto": "Plan CRM Starter",
       "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
+      "precioUnitario": 490,
+      "total": 490,
+      "estado": "Pendiente"
     },
     {
       "id": "54",
-      "fecha": "2026-05-09",
+      "fecha": "2026-04-12",
       "cliente": "Kora Textil",
       "producto": "Plan CRM Enterprise",
       "cantidad": 1,
@@ -1093,58 +1173,8 @@
       "estado": "Completada"
     },
     {
-      "id": "49",
-      "fecha": "2026-05-08",
-      "cliente": "Faro Seguros",
-      "producto": "Módulo de Analítica",
-      "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
-      "estado": "Completada"
-    },
-    {
-      "id": "53",
-      "fecha": "2026-05-06",
-      "cliente": "Mosaico Diseño",
-      "producto": "Plan CRM Starter",
-      "cantidad": 2,
-      "precioUnitario": 490,
-      "total": 980,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "56",
-      "fecha": "2026-05-06",
-      "cliente": "Faro Seguros",
-      "producto": "Plan CRM Business",
-      "cantidad": 4,
-      "precioUnitario": 1290,
-      "total": 5160,
-      "estado": "Completada"
-    },
-    {
-      "id": "50",
-      "fecha": "2026-05-04",
-      "cliente": "Lumen Educación",
-      "producto": "Plan CRM Starter",
-      "cantidad": 3,
-      "precioUnitario": 490,
-      "total": 1470,
-      "estado": "Cancelada"
-    },
-    {
-      "id": "51",
-      "fecha": "2026-04-24",
-      "cliente": "Faro Seguros",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
-      "estado": "Completada"
-    },
-    {
       "id": "52",
-      "fecha": "2026-04-23",
+      "fecha": "2026-04-11",
       "cliente": "Ícaro Media",
       "producto": "Módulo de Analítica",
       "cantidad": 2,
@@ -1153,8 +1183,48 @@
       "estado": "Completada"
     },
     {
+      "id": "51",
+      "fecha": "2026-04-07",
+      "cliente": "Faro Seguros",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "50",
+      "fecha": "2026-04-06",
+      "cliente": "Lumen Educación",
+      "producto": "Plan CRM Starter",
+      "cantidad": 3,
+      "precioUnitario": 490,
+      "total": 1470,
+      "estado": "Cancelada"
+    },
+    {
+      "id": "49",
+      "fecha": "2026-04-05",
+      "cliente": "Faro Seguros",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
+      "estado": "Completada"
+    },
+    {
+      "id": "48",
+      "fecha": "2026-04-03",
+      "cliente": "Grupo Litoral",
+      "producto": "Capacitación del equipo",
+      "cantidad": 1,
+      "precioUnitario": 600,
+      "total": 600,
+      "estado": "Completada"
+    },
+    {
       "id": "46",
-      "fecha": "2026-04-21",
+      "fecha": "2026-04-01",
       "cliente": "Cumbre Software",
       "producto": "Plan CRM Starter",
       "cantidad": 2,
@@ -1163,8 +1233,18 @@
       "estado": "Completada"
     },
     {
+      "id": "47",
+      "fecha": "2026-04-01",
+      "cliente": "Pampa Agro",
+      "producto": "Integración ERP",
+      "cantidad": 1,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Completada"
+    },
+    {
       "id": "45",
-      "fecha": "2026-04-18",
+      "fecha": "2026-03-28",
       "cliente": "Norte Construcciones",
       "producto": "Integración ERP",
       "cantidad": 1,
@@ -1173,8 +1253,68 @@
       "estado": "Completada"
     },
     {
+      "id": "44",
+      "fecha": "2026-03-22",
+      "cliente": "Júpiter Foods",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "43",
+      "fecha": "2026-03-17",
+      "cliente": "Grupo Litoral",
+      "producto": "Plan CRM Business",
+      "cantidad": 3,
+      "precioUnitario": 1290,
+      "total": 3870,
+      "estado": "Completada"
+    },
+    {
+      "id": "42",
+      "fecha": "2026-03-14",
+      "cliente": "Faro Seguros",
+      "producto": "Plan CRM Starter",
+      "cantidad": 3,
+      "precioUnitario": 490,
+      "total": 1470,
+      "estado": "Completada"
+    },
+    {
+      "id": "41",
+      "fecha": "2026-03-08",
+      "cliente": "Vértice Industrial",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "40",
+      "fecha": "2026-03-05",
+      "cliente": "Norte Construcciones",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "39",
+      "fecha": "2026-03-01",
+      "cliente": "Delta Salud",
+      "producto": "Módulo de Analítica",
+      "cantidad": 3,
+      "precioUnitario": 750,
+      "total": 2250,
+      "estado": "Completada"
+    },
+    {
       "id": "38",
-      "fecha": "2026-04-17",
+      "fecha": "2026-02-26",
       "cliente": "Lumen Educación",
       "producto": "Plan CRM Business",
       "cantidad": 1,
@@ -1184,58 +1324,8 @@
     },
     {
       "id": "37",
-      "fecha": "2026-04-16",
+      "fecha": "2026-02-23",
       "cliente": "Zenit Telecom",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
-    },
-    {
-      "id": "39",
-      "fecha": "2026-04-15",
-      "cliente": "Horizonte Energía",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
-      "estado": "Completada"
-    },
-    {
-      "id": "40",
-      "fecha": "2026-04-11",
-      "cliente": "Grupo Litoral",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 1,
-      "precioUnitario": 1800,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "43",
-      "fecha": "2026-04-09",
-      "cliente": "Ícaro Media",
-      "producto": "Módulo de Analítica",
-      "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
-      "estado": "Completada"
-    },
-    {
-      "id": "44",
-      "fecha": "2026-04-08",
-      "cliente": "Júpiter Foods",
-      "producto": "Plan CRM Starter",
-      "cantidad": 2,
-      "precioUnitario": 490,
-      "total": 980,
-      "estado": "Completada"
-    },
-    {
-      "id": "41",
-      "fecha": "2026-03-28",
-      "cliente": "Pampa Agro",
       "producto": "Integración ERP",
       "cantidad": 1,
       "precioUnitario": 2200,
@@ -1244,28 +1334,48 @@
     },
     {
       "id": "36",
-      "fecha": "2026-03-24",
+      "fecha": "2026-02-16",
       "cliente": "Lumen Educación",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 3,
+      "precioUnitario": 1800,
+      "total": 5400,
       "estado": "Completada"
     },
     {
-      "id": "42",
-      "fecha": "2026-03-23",
-      "cliente": "Cumbre Software",
-      "producto": "Módulo de Analítica",
-      "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
-      "estado": "Pendiente"
+      "id": "35",
+      "fecha": "2026-02-14",
+      "cliente": "Delta Salud",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "34",
+      "fecha": "2026-02-07",
+      "cliente": "Júpiter Foods",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 3,
+      "precioUnitario": 1800,
+      "total": 5400,
+      "estado": "Completada"
     },
     {
       "id": "33",
-      "fecha": "2026-03-16",
+      "fecha": "2026-02-04",
       "cliente": "Pampa Agro",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
+      "id": "31",
+      "fecha": "2026-02-02",
+      "cliente": "Vértice Industrial",
       "producto": "Capacitación del equipo",
       "cantidad": 2,
       "precioUnitario": 600,
@@ -1274,7 +1384,7 @@
     },
     {
       "id": "32",
-      "fecha": "2026-03-14",
+      "fecha": "2026-02-02",
       "cliente": "Nexo Retail",
       "producto": "Módulo de Analítica",
       "cantidad": 2,
@@ -1283,99 +1393,39 @@
       "estado": "Completada"
     },
     {
-      "id": "35",
-      "fecha": "2026-03-09",
-      "cliente": "Delta Salud",
-      "producto": "Plan CRM Business",
-      "cantidad": 3,
-      "precioUnitario": 1290,
-      "total": 3870,
+      "id": "30",
+      "fecha": "2026-02-01",
+      "cliente": "Júpiter Foods",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
       "estado": "Completada"
     },
     {
-      "id": "31",
-      "fecha": "2026-03-06",
-      "cliente": "Vértice Industrial",
+      "id": "29",
+      "fecha": "2026-01-30",
+      "cliente": "Óptica Visión",
       "producto": "Capacitación del equipo",
       "cantidad": 3,
       "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "28",
+      "fecha": "2026-01-29",
+      "cliente": "Prisma Finanzas",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 1,
+      "precioUnitario": 1800,
       "total": 1800,
       "estado": "Completada"
     },
     {
       "id": "27",
-      "fecha": "2026-03-05",
-      "cliente": "Prisma Finanzas",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 3,
-      "precioUnitario": 1800,
-      "total": 5400,
-      "estado": "Completada"
-    },
-    {
-      "id": "34",
-      "fecha": "2026-03-02",
-      "cliente": "Júpiter Foods",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 4,
-      "precioUnitario": 1800,
-      "total": 7200,
-      "estado": "Completada"
-    },
-    {
-      "id": "26",
-      "fecha": "2026-02-27",
-      "cliente": "Vértice Industrial",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
-      "estado": "Cancelada"
-    },
-    {
-      "id": "29",
-      "fecha": "2026-02-23",
-      "cliente": "Prisma Finanzas",
-      "producto": "Capacitación del equipo",
-      "cantidad": 2,
-      "precioUnitario": 600,
-      "total": 1200,
-      "estado": "Completada"
-    },
-    {
-      "id": "30",
-      "fecha": "2026-02-20",
-      "cliente": "Júpiter Foods",
-      "producto": "Capacitación del equipo",
-      "cantidad": 2,
-      "precioUnitario": 600,
-      "total": 1200,
-      "estado": "Completada"
-    },
-    {
-      "id": "28",
-      "fecha": "2026-02-19",
-      "cliente": "Faro Seguros",
-      "producto": "Plan CRM Business",
-      "cantidad": 1,
-      "precioUnitario": 1290,
-      "total": 1290,
-      "estado": "Completada"
-    },
-    {
-      "id": "17",
-      "fecha": "2026-02-18",
-      "cliente": "Zenit Telecom",
-      "producto": "Capacitación del equipo",
-      "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "19",
-      "fecha": "2026-02-17",
-      "cliente": "Kora Textil",
+      "fecha": "2026-01-26",
+      "cliente": "Nexo Retail",
       "producto": "Módulo de Analítica",
       "cantidad": 3,
       "precioUnitario": 750,
@@ -1383,8 +1433,18 @@
       "estado": "Completada"
     },
     {
+      "id": "26",
+      "fecha": "2026-01-24",
+      "cliente": "Zenit Telecom",
+      "producto": "Capacitación del equipo",
+      "cantidad": 1,
+      "precioUnitario": 600,
+      "total": 600,
+      "estado": "Completada"
+    },
+    {
       "id": "25",
-      "fecha": "2026-02-14",
+      "fecha": "2026-01-15",
       "cliente": "Grupo Litoral",
       "producto": "Soporte Premium (anual)",
       "cantidad": 3,
@@ -1393,38 +1453,8 @@
       "estado": "Completada"
     },
     {
-      "id": "23",
-      "fecha": "2026-02-13",
-      "cliente": "Júpiter Foods",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Pendiente"
-    },
-    {
-      "id": "21",
-      "fecha": "2026-02-04",
-      "cliente": "Vértice Industrial",
-      "producto": "Capacitación del equipo",
-      "cantidad": 3,
-      "precioUnitario": 600,
-      "total": 1800,
-      "estado": "Completada"
-    },
-    {
-      "id": "22",
-      "fecha": "2026-02-02",
-      "cliente": "Júpiter Foods",
-      "producto": "Módulo de Analítica",
-      "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
-      "estado": "Cancelada"
-    },
-    {
       "id": "24",
-      "fecha": "2026-01-29",
+      "fecha": "2026-01-14",
       "cliente": "Vértice Industrial",
       "producto": "Soporte Premium (anual)",
       "cantidad": 1,
@@ -1433,8 +1463,38 @@
       "estado": "Completada"
     },
     {
+      "id": "22",
+      "fecha": "2026-01-10",
+      "cliente": "Júpiter Foods",
+      "producto": "Módulo de Analítica",
+      "cantidad": 1,
+      "precioUnitario": 750,
+      "total": 750,
+      "estado": "Cancelada"
+    },
+    {
+      "id": "23",
+      "fecha": "2026-01-09",
+      "cliente": "Júpiter Foods",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "21",
+      "fecha": "2026-01-08",
+      "cliente": "Vértice Industrial",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
       "id": "20",
-      "fecha": "2026-01-25",
+      "fecha": "2026-01-06",
       "cliente": "Ícaro Media",
       "producto": "Integración ERP",
       "cantidad": 1,
@@ -1443,9 +1503,9 @@
       "estado": "Completada"
     },
     {
-      "id": "16",
-      "fecha": "2026-01-23",
-      "cliente": "Delta Salud",
+      "id": "19",
+      "fecha": "2026-01-02",
+      "cliente": "Kora Textil",
       "producto": "Integración ERP",
       "cantidad": 1,
       "precioUnitario": 2200,
@@ -1454,47 +1514,37 @@
     },
     {
       "id": "18",
-      "fecha": "2026-01-23",
-      "cliente": "Kora Textil",
-      "producto": "Plan CRM Business",
-      "cantidad": 4,
-      "precioUnitario": 1290,
-      "total": 5160,
-      "estado": "Completada"
-    },
-    {
-      "id": "14",
-      "fecha": "2026-01-10",
-      "cliente": "Kora Textil",
-      "producto": "Plan CRM Business",
-      "cantidad": 2,
-      "precioUnitario": 1290,
-      "total": 2580,
-      "estado": "Completada"
-    },
-    {
-      "id": "13",
-      "fecha": "2026-01-07",
-      "cliente": "Óptica Visión",
+      "fecha": "2026-01-01",
+      "cliente": "Nexo Retail",
       "producto": "Capacitación del equipo",
-      "cantidad": 1,
+      "cantidad": 2,
       "precioUnitario": 600,
-      "total": 600,
+      "total": 1200,
       "estado": "Completada"
     },
     {
-      "id": "10",
-      "fecha": "2026-01-06",
-      "cliente": "Kora Textil",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
+      "id": "17",
+      "fecha": "2025-12-29",
+      "cliente": "Zenit Telecom",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
+      "id": "16",
+      "fecha": "2025-12-25",
+      "cliente": "Delta Salud",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 2,
+      "precioUnitario": 1800,
+      "total": 3600,
       "estado": "Completada"
     },
     {
       "id": "15",
-      "fecha": "2026-01-02",
+      "fecha": "2025-12-22",
       "cliente": "Norte Construcciones",
       "producto": "Plan CRM Business",
       "cantidad": 1,
@@ -1503,69 +1553,29 @@
       "estado": "Completada"
     },
     {
-      "id": "9",
-      "fecha": "2025-12-30",
-      "cliente": "Prisma Finanzas",
-      "producto": "Soporte Premium (anual)",
+      "id": "13",
+      "fecha": "2025-12-19",
+      "cliente": "Óptica Visión",
+      "producto": "Capacitación del equipo",
       "cantidad": 1,
-      "precioUnitario": 1800,
-      "total": 1800,
+      "precioUnitario": 600,
+      "total": 600,
+      "estado": "Completada"
+    },
+    {
+      "id": "14",
+      "fecha": "2025-12-19",
+      "cliente": "Kora Textil",
+      "producto": "Plan CRM Business",
+      "cantidad": 1,
+      "precioUnitario": 1290,
+      "total": 1290,
       "estado": "Completada"
     },
     {
       "id": "12",
-      "fecha": "2025-12-29",
+      "fecha": "2025-12-17",
       "cliente": "Cumbre Software",
-      "producto": "Integración ERP",
-      "cantidad": 1,
-      "precioUnitario": 2200,
-      "total": 2200,
-      "estado": "Completada"
-    },
-    {
-      "id": "11",
-      "fecha": "2025-12-25",
-      "cliente": "Lumen Educación",
-      "producto": "Módulo de Analítica",
-      "cantidad": 2,
-      "precioUnitario": 750,
-      "total": 1500,
-      "estado": "Completada"
-    },
-    {
-      "id": "4",
-      "fecha": "2025-12-18",
-      "cliente": "Kora Textil",
-      "producto": "Plan CRM Business",
-      "cantidad": 3,
-      "precioUnitario": 1290,
-      "total": 3870,
-      "estado": "Completada"
-    },
-    {
-      "id": "1",
-      "fecha": "2025-12-11",
-      "cliente": "Mosaico Diseño",
-      "producto": "Plan CRM Business",
-      "cantidad": 3,
-      "precioUnitario": 1290,
-      "total": 3870,
-      "estado": "Completada"
-    },
-    {
-      "id": "5",
-      "fecha": "2025-12-11",
-      "cliente": "Lumen Educación",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
-    },
-    {
-      "id": "8",
-      "fecha": "2025-12-11",
-      "cliente": "Faro Seguros",
       "producto": "Capacitación del equipo",
       "cantidad": 2,
       "precioUnitario": 600,
@@ -1573,79 +1583,149 @@
       "estado": "Completada"
     },
     {
-      "id": "7",
-      "fecha": "2025-11-30",
-      "cliente": "Norte Construcciones",
-      "producto": "Módulo de Analítica",
+      "id": "11",
+      "fecha": "2025-12-11",
+      "cliente": "Pampa Agro",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 2,
+      "precioUnitario": 1800,
+      "total": 3600,
+      "estado": "Completada"
+    },
+    {
+      "id": "9",
+      "fecha": "2025-12-08",
+      "cliente": "Pampa Agro",
+      "producto": "Integración ERP",
       "cantidad": 1,
-      "precioUnitario": 750,
-      "total": 750,
+      "precioUnitario": 2200,
+      "total": 2200,
+      "estado": "Pendiente"
+    },
+    {
+      "id": "10",
+      "fecha": "2025-12-08",
+      "cliente": "Andes Logística",
+      "producto": "Capacitación del equipo",
+      "cantidad": 2,
+      "precioUnitario": 600,
+      "total": 1200,
+      "estado": "Completada"
+    },
+    {
+      "id": "8",
+      "fecha": "2025-12-03",
+      "cliente": "Faro Seguros",
+      "producto": "Plan CRM Enterprise",
+      "cantidad": 1,
+      "precioUnitario": 3900,
+      "total": 3900,
+      "estado": "Completada"
+    },
+    {
+      "id": "7",
+      "fecha": "2025-12-01",
+      "cliente": "Faro Seguros",
+      "producto": "Plan CRM Business",
+      "cantidad": 1,
+      "precioUnitario": 1290,
+      "total": 1290,
+      "estado": "Completada"
+    },
+    {
+      "id": "6",
+      "fecha": "2025-11-29",
+      "cliente": "Grupo Litoral",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "5",
+      "fecha": "2025-11-24",
+      "cliente": "Lumen Educación",
+      "producto": "Capacitación del equipo",
+      "cantidad": 3,
+      "precioUnitario": 600,
+      "total": 1800,
+      "estado": "Completada"
+    },
+    {
+      "id": "4",
+      "fecha": "2025-11-20",
+      "cliente": "Kora Textil",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "3",
+      "fecha": "2025-11-12",
+      "cliente": "Horizonte Energía",
+      "producto": "Soporte Premium (anual)",
+      "cantidad": 3,
+      "precioUnitario": 1800,
+      "total": 5400,
       "estado": "Completada"
     },
     {
       "id": "2",
-      "fecha": "2025-11-29",
+      "fecha": "2025-11-08",
       "cliente": "Pampa Agro",
+      "producto": "Plan CRM Business",
+      "cantidad": 2,
+      "precioUnitario": 1290,
+      "total": 2580,
+      "estado": "Completada"
+    },
+    {
+      "id": "1",
+      "fecha": "2025-11-01",
+      "cliente": "Mosaico Diseño",
       "producto": "Plan CRM Business",
       "cantidad": 3,
       "precioUnitario": 1290,
       "total": 3870,
       "estado": "Completada"
-    },
-    {
-      "id": "3",
-      "fecha": "2025-11-25",
-      "cliente": "Horizonte Energía",
-      "producto": "Soporte Premium (anual)",
-      "cantidad": 4,
-      "precioUnitario": 1800,
-      "total": 7200,
-      "estado": "Completada"
-    },
-    {
-      "id": "6",
-      "fecha": "2025-11-21",
-      "cliente": "Grupo Litoral",
-      "producto": "Capacitación del equipo",
-      "cantidad": 4,
-      "precioUnitario": 600,
-      "total": 2400,
-      "estado": "Completada"
     }
   ],
   "leads": [
     {
-      "id": "15",
-      "nombre": "Rocío Villalba",
-      "empresa": "Puerto Pesca",
-      "email": "rocio@puertopesca.com",
+      "id": "9",
+      "nombre": "Victoria Cabrera",
+      "empresa": "Jazmín Flores",
+      "email": "victoria@jazminflores.com",
       "fuente": "Evento",
       "estado": "Calificado",
       "fecha": "2026-11-09"
     },
     {
-      "id": "2",
-      "nombre": "Diego Acosta",
-      "empresa": "Ciclo Bikes",
-      "email": "diego@ciclobikes.com",
-      "fuente": "Sitio web",
-      "estado": "Contactado",
-      "fecha": "2026-11-08"
-    },
-    {
-      "id": "13",
-      "nombre": "Antonella Ponce",
-      "empresa": "Nube Cloud",
-      "email": "antonella@nubecloud.com",
+      "id": "7",
+      "nombre": "Daniela Méndez",
+      "empresa": "Hielo Sur",
+      "email": "daniela@hielosur.com",
       "fuente": "Google Ads",
       "estado": "Descartado",
       "fecha": "2026-11-08"
     },
     {
-      "id": "16",
-      "nombre": "Sebastián Correa",
-      "empresa": "Rayo Envíos",
-      "email": "sebastian@rayoenvios.com",
+      "id": "17",
+      "nombre": "Ailén Domínguez",
+      "empresa": "Sol Solar",
+      "email": "ailen@solsolar.com",
+      "fuente": "Referido",
+      "estado": "Descartado",
+      "fecha": "2026-11-08"
+    },
+    {
+      "id": "10",
+      "nombre": "Hernán Godoy",
+      "empresa": "Kiwi Apps",
+      "email": "hernan@kiwiapps.com",
       "fuente": "Sitio web",
       "estado": "Nuevo",
       "fecha": "2026-11-02"
@@ -1657,121 +1737,121 @@
       "email": "carolina@fenixgym.com",
       "fuente": "LinkedIn",
       "estado": "Contactado",
-      "fecha": "2026-10-31"
-    },
-    {
-      "id": "11",
-      "nombre": "Milagros Quiroga",
-      "empresa": "Lago Hoteles",
-      "email": "milagros@lagohoteles.com",
-      "fuente": "LinkedIn",
-      "estado": "Contactado",
       "fecha": "2026-10-22"
-    },
-    {
-      "id": "6",
-      "nombre": "Esteban Rojas",
-      "empresa": "Galaxia Kids",
-      "email": "esteban@galaxiakids.com",
-      "fuente": "Referido",
-      "estado": "Descartado",
-      "fecha": "2026-10-18"
-    },
-    {
-      "id": "1",
-      "nombre": "Paula Benítez",
-      "empresa": "Bosque Café",
-      "email": "paula@bosquecafe.com",
-      "fuente": "Google Ads",
-      "estado": "Contactado",
-      "fecha": "2026-10-04"
-    },
-    {
-      "id": "12",
-      "nombre": "Rodrigo Ferreyra",
-      "empresa": "Molino Pastas",
-      "email": "rodrigo@molinopastas.com",
-      "fuente": "Sitio web",
-      "estado": "Contactado",
-      "fecha": "2026-10-04"
-    },
-    {
-      "id": "7",
-      "nombre": "Daniela Méndez",
-      "empresa": "Hielo Sur",
-      "email": "daniela@hielosur.com",
-      "fuente": "Evento",
-      "estado": "Descartado",
-      "fecha": "2026-10-03"
-    },
-    {
-      "id": "14",
-      "nombre": "Maximiliano Arias",
-      "empresa": "Oasis Spa",
-      "email": "maximiliano@oasisspa.com",
-      "fuente": "Referido",
-      "estado": "Calificado",
-      "fecha": "2026-10-03"
-    },
-    {
-      "id": "3",
-      "nombre": "Mariana Luna",
-      "empresa": "Duna Cosmética",
-      "email": "mariana@dunacosmetica.com",
-      "fuente": "Google Ads",
-      "estado": "Contactado",
-      "fecha": "2026-09-30"
     },
     {
       "id": "18",
       "nombre": "Emiliano Farías",
       "empresa": "Trigo Panificados",
       "email": "emiliano@trigopanificados.com",
-      "fuente": "Referido",
-      "estado": "Calificado",
-      "fecha": "2026-09-30"
+      "fuente": "Email",
+      "estado": "Descartado",
+      "fecha": "2026-10-18"
     },
     {
-      "id": "17",
-      "nombre": "Ailén Domínguez",
-      "empresa": "Sol Solar",
-      "email": "ailen@solsolar.com",
-      "fuente": "Referido",
-      "estado": "Calificado",
-      "fecha": "2026-09-23"
-    },
-    {
-      "id": "10",
-      "nombre": "Hernán Godoy",
-      "empresa": "Kiwi Apps",
-      "email": "hernan@kiwiapps.com",
+      "id": "6",
+      "nombre": "Esteban Rojas",
+      "empresa": "Galaxia Kids",
+      "email": "esteban@galaxiakids.com",
       "fuente": "Sitio web",
       "estado": "Contactado",
-      "fecha": "2026-09-19"
+      "fecha": "2026-10-04"
     },
     {
-      "id": "4",
-      "nombre": "Gonzalo Paz",
-      "empresa": "Eco Pack",
-      "email": "gonzalo@ecopack.com",
-      "fuente": "LinkedIn",
-      "estado": "Contactado",
-      "fecha": "2026-09-16"
+      "id": "1",
+      "nombre": "Paula Benítez",
+      "empresa": "Bosque Café",
+      "email": "paula@bosquecafe.com",
+      "fuente": "Evento",
+      "estado": "Descartado",
+      "fecha": "2026-10-03"
     },
     {
       "id": "8",
       "nombre": "Federico Sosa",
       "empresa": "Isla Studio",
       "email": "federico@islastudio.com",
+      "fuente": "Referido",
+      "estado": "Calificado",
+      "fecha": "2026-10-03"
+    },
+    {
+      "id": "12",
+      "nombre": "Rodrigo Ferreyra",
+      "empresa": "Molino Pastas",
+      "email": "rodrigo@molinopastas.com",
+      "fuente": "Referido",
+      "estado": "Calificado",
+      "fecha": "2026-09-30"
+    },
+    {
+      "id": "14",
+      "nombre": "Maximiliano Arias",
+      "empresa": "Oasis Spa",
+      "email": "maximiliano@oasisspa.com",
+      "fuente": "Sitio web",
+      "estado": "Calificado",
+      "fecha": "2026-09-25"
+    },
+    {
+      "id": "11",
+      "nombre": "Milagros Quiroga",
+      "empresa": "Lago Hoteles",
+      "email": "milagros@lagohoteles.com",
+      "fuente": "Referido",
+      "estado": "Calificado",
+      "fecha": "2026-09-23"
+    },
+    {
+      "id": "16",
+      "nombre": "Sebastián Correa",
+      "empresa": "Rayo Envíos",
+      "email": "sebastian@rayoenvios.com",
+      "fuente": "Google Ads",
+      "estado": "Contactado",
+      "fecha": "2026-09-22"
+    },
+    {
+      "id": "4",
+      "nombre": "Gonzalo Paz",
+      "empresa": "Eco Pack",
+      "email": "gonzalo@ecopack.com",
+      "fuente": "Sitio web",
+      "estado": "Contactado",
+      "fecha": "2026-09-19"
+    },
+    {
+      "id": "13",
+      "nombre": "Antonella Ponce",
+      "empresa": "Nube Cloud",
+      "email": "antonella@nubecloud.com",
+      "fuente": "LinkedIn",
+      "estado": "Contactado",
+      "fecha": "2026-09-18"
+    },
+    {
+      "id": "15",
+      "nombre": "Rocío Villalba",
+      "empresa": "Puerto Pesca",
+      "email": "rocio@puertopesca.com",
+      "fuente": "LinkedIn",
+      "estado": "Calificado",
+      "fecha": "2026-09-16"
+    },
+    {
+      "id": "2",
+      "nombre": "Diego Acosta",
+      "empresa": "Ciclo Bikes",
+      "email": "diego@ciclobikes.com",
       "fuente": "LinkedIn",
       "estado": "Calificado",
       "fecha": "2026-09-13"
     },
     {
-      "id": "9",
-      "nombre": "Victoria Cabrera",
-      "empresa": "Jazmín Flores",
-      "email": "victoria@jazminflores.com",
+      "id": "3",
+      "nombre": "Mariana Luna",
+      "empresa": "Duna Cosmética",
+      "email": "mariana@dunacosmetica.com",
       "fuente": "Referido",
       "estado": "Descartado",
       "fecha": "2026-09-08"
@@ -1781,71 +1861,71 @@
     {
       "id": "1",
       "titulo": "Migración a CRM Business",
-      "cliente": "Horizonte Energía",
-      "monto": 5500,
+      "cliente": "Nexo Retail",
+      "monto": 12250,
       "etapa": "Prospección",
       "probabilidad": 20,
-      "fechaCierre": "2027-01-25"
+      "fechaCierre": "2027-02-03"
     },
     {
       "id": "2",
       "titulo": "Licencias Enterprise",
-      "cliente": "Raíz Orgánica",
-      "monto": 4750,
+      "cliente": "Umbral Consultores",
+      "monto": 10500,
       "etapa": "Propuesta",
       "probabilidad": 45,
-      "fechaCierre": "2027-01-18"
+      "fechaCierre": "2026-11-27"
     },
     {
       "id": "3",
       "titulo": "Implementación ERP",
-      "cliente": "Prisma Finanzas",
-      "monto": 7000,
+      "cliente": "Cumbre Software",
+      "monto": 17250,
       "etapa": "Negociación",
       "probabilidad": 70,
-      "fechaCierre": "2027-01-27"
+      "fechaCierre": "2026-12-04"
     },
     {
       "id": "4",
       "titulo": "Renovación soporte anual",
-      "cliente": "Kora Textil",
-      "monto": 21000,
+      "cliente": "Andes Logística",
+      "monto": 14000,
       "etapa": "Ganada",
       "probabilidad": 100,
-      "fechaCierre": "2026-10-02"
+      "fechaCierre": "2026-10-06"
     },
     {
       "id": "5",
       "titulo": "Expansión regional",
-      "cliente": "Umbral Consultores",
-      "monto": 11500,
+      "cliente": "Horizonte Energía",
+      "monto": 19500,
       "etapa": "Perdida",
       "probabilidad": 0,
-      "fechaCierre": "2026-11-06"
+      "fechaCierre": "2026-10-31"
     },
     {
       "id": "6",
       "titulo": "Analítica avanzada",
-      "cliente": "Zenit Telecom",
-      "monto": 16250,
+      "cliente": "Delta Salud",
+      "monto": 22000,
       "etapa": "Prospección",
       "probabilidad": 20,
-      "fechaCierre": "2026-12-23"
+      "fechaCierre": "2026-12-20"
     },
     {
       "id": "7",
       "titulo": "Capacitación comercial",
-      "cliente": "Nexo Retail",
-      "monto": 12250,
+      "cliente": "Kora Textil",
+      "monto": 8000,
       "etapa": "Propuesta",
       "probabilidad": 45,
-      "fechaCierre": "2027-02-03"
+      "fechaCierre": "2027-01-17"
     },
     {
       "id": "8",
       "titulo": "Integración e-commerce",
-      "cliente": "Umbral Consultores",
-      "monto": 10500,
+      "cliente": "Ícaro Media",
+      "monto": 12500,
       "etapa": "Negociación",
       "probabilidad": 70,
       "fechaCierre": "2026-11-27"
@@ -1853,56 +1933,56 @@
     {
       "id": "9",
       "titulo": "Upgrade de plan",
-      "cliente": "Cumbre Software",
-      "monto": 17250,
+      "cliente": "Ícaro Media",
+      "monto": 21500,
       "etapa": "Ganada",
       "probabilidad": 100,
-      "fechaCierre": "2026-11-04"
+      "fechaCierre": "2026-09-19"
     },
     {
       "id": "10",
       "titulo": "Piloto de automatización",
-      "cliente": "Andes Logística",
-      "monto": 14000,
+      "cliente": "Terra Inmobiliaria",
+      "monto": 16500,
       "etapa": "Perdida",
       "probabilidad": 0,
-      "fechaCierre": "2026-10-06"
+      "fechaCierre": "2026-10-02"
     },
     {
       "id": "11",
       "titulo": "Rollout sucursales",
-      "cliente": "Horizonte Energía",
-      "monto": 19500,
+      "cliente": "Mosaico Diseño",
+      "monto": 12000,
       "etapa": "Prospección",
       "probabilidad": 20,
-      "fechaCierre": "2026-12-10"
+      "fechaCierre": "2027-01-04"
     },
     {
       "id": "12",
       "titulo": "Tablero ejecutivo",
-      "cliente": "Delta Salud",
-      "monto": 22000,
+      "cliente": "Pampa Agro",
+      "monto": 9750,
       "etapa": "Propuesta",
       "probabilidad": 45,
-      "fechaCierre": "2026-12-20"
+      "fechaCierre": "2027-01-16"
     },
     {
       "id": "13",
       "titulo": "Centralización de datos",
-      "cliente": "Kora Textil",
-      "monto": 8000,
+      "cliente": "Óptica Visión",
+      "monto": 11250,
       "etapa": "Negociación",
       "probabilidad": 70,
-      "fechaCierre": "2027-01-17"
+      "fechaCierre": "2027-01-01"
     },
     {
       "id": "14",
       "titulo": "Portal de clientes",
-      "cliente": "Ícaro Media",
-      "monto": 12500,
+      "cliente": "Vértice Industrial",
+      "monto": 22250,
       "etapa": "Ganada",
       "probabilidad": 100,
-      "fechaCierre": "2026-11-08"
+      "fechaCierre": "2026-10-10"
     }
   ],
   "reportes": [
@@ -1911,7 +1991,7 @@
       "nombre": "Ventas mensuales",
       "tipo": "Ventas",
       "responsable": "Sofía Martínez",
-      "fecha": "2026-11-14",
+      "fecha": "2026-11-11",
       "estado": "Generado"
     },
     {
@@ -1919,7 +1999,7 @@
       "nombre": "Embudo comercial",
       "tipo": "Pipeline",
       "responsable": "Mateo Fernández",
-      "fecha": "2026-11-05",
+      "fecha": "2026-11-07",
       "estado": "Generado"
     },
     {
@@ -1927,7 +2007,7 @@
       "nombre": "Altas de clientes",
       "tipo": "Clientes",
       "responsable": "Lucía Romero",
-      "fecha": "2026-10-30",
+      "fecha": "2026-11-02",
       "estado": "Generado"
     },
     {
@@ -1935,7 +2015,7 @@
       "nombre": "Rendimiento por canal",
       "tipo": "Marketing",
       "responsable": "Tomás Ruiz",
-      "fecha": "2026-10-24",
+      "fecha": "2026-10-25",
       "estado": "Generado"
     },
     {
@@ -1943,7 +2023,7 @@
       "nombre": "Proyección trimestral",
       "tipo": "Finanzas",
       "responsable": "Sofía Martínez",
-      "fecha": "2026-10-19",
+      "fecha": "2026-10-21",
       "estado": "Generado"
     },
     {
@@ -1951,7 +2031,7 @@
       "nombre": "Churn y retención",
       "tipo": "Clientes",
       "responsable": "Mateo Fernández",
-      "fecha": "2026-10-13",
+      "fecha": "2026-10-16",
       "estado": "En revisión"
     },
     {
@@ -1959,7 +2039,7 @@
       "nombre": "Ticket promedio",
       "tipo": "Ventas",
       "responsable": "Lucía Romero",
-      "fecha": "2026-10-08",
+      "fecha": "2026-10-09",
       "estado": "En revisión"
     },
     {

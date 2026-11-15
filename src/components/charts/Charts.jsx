@@ -70,7 +70,7 @@ export function HBarChart({ data, dataKey, name, format, height }) {
   const h = height ?? Math.max(160, data.length * 40);
   return (
     <ResponsiveContainer width="100%" height={h}>
-      <BarChart data={data} layout="vertical" margin={{ top: 0, right: 48, left: 0, bottom: 0 }} barCategoryGap={8}>
+      <BarChart data={data} layout="vertical" margin={{ top: 0, right: 80, left: 0, bottom: 0 }} barCategoryGap={8}>
         <CartesianGrid horizontal={false} stroke={chart.grid} />
         <XAxis type="number" hide />
         <YAxis

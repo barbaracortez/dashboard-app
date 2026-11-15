@@ -101,15 +101,23 @@ export function generateSeed(today = new Date()) {
   // Ventas: ~12 meses, con tendencia creciente
   const ventas = [];
   let ventaId = 1;
-  for (let month = 11; month >= 0; month--) {
-    const cantidadVentas = 6 + Math.round((11 - month) * 0.7) + int(0, 3);
-    for (let k = 0; k < cantidadVentas; k++) {
-      const offset = month * 30 + int(0, 29);
-      const fecha = daysAgo(month === 0 ? int(0, today.getDate() - 1) : offset);
+  for (let month = 12; month >= 0; month--) {
+    // Mes calendario: en el mes actual, solo hasta hoy
+    const first = new Date(today.getFullYear(), today.getMonth() - month, 1);
+    const daysInMonth = new Date(first.getFullYear(), first.getMonth() + 1, 0).getDate();
+    const lastDay = month === 0 ? today.getDate() : daysInMonth;
+    // Objetivo de facturación con crecimiento sostenido (~5% mensual) y algo de variación
+    const objetivo = (17000 * Math.pow(1.05, 12 - month) + int(-2500, 2500)) * (lastDay / daysInMonth);
+    let facturado = 0;
+    while (facturado < objetivo) {
+      // Reparte la facturación de forma pareja a lo largo del mes
+      const dia = Math.round(lastDay * (facturado / objetivo)) + int(-1, 1);
+      const fecha = new Date(first.getFullYear(), first.getMonth(), Math.min(lastDay, Math.max(1, dia)));
       const producto = pick(PRODUCTOS);
-      const cantidad = producto.precio > 2000 ? 1 : int(1, 4);
+      const cantidad = producto.precio > 2000 ? 1 : int(1, 3);
       const r = rand();
-      const estado = month === 0 && r < 0.35 ? "Pendiente" : r < 0.9 ? "Completada" : r < 0.95 ? "Pendiente" : "Cancelada";
+      const estado = month === 0 && r < 0.25 ? "Pendiente" : r < 0.92 ? "Completada" : r < 0.96 ? "Pendiente" : "Cancelada";
+      if (estado === "Completada") facturado += cantidad * producto.precio;
       ventas.push({
         id: String(ventaId++),
         fecha: iso(fecha),
