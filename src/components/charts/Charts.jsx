@@ -1,3 +1,4 @@
+import { useSyncExternalStore } from "react";
 import {
   Area,
   AreaChart,
@@ -10,7 +11,10 @@ import {
   YAxis,
 } from "recharts";
 import { useTheme } from "../../context/ThemeContext";
-import { formatCompactMoney } from "../../utils/format";
+import { formatMoney } from "../../utils/format";
+
+const moneyCompact = (v) => formatMoney(v, { compact: true });
+const moneyFull = (v) => formatMoney(v);
 
 function ChartTooltip({ active, payload, label, format }) {
   if (!active || !payload?.length) return null;
@@ -29,13 +33,52 @@ function ChartTooltip({ active, payload, label, format }) {
 
 const axisTick = (chart) => ({ fill: chart.muted, fontSize: 12 });
 
-// Serie temporal de una sola métrica
-export function TrendChart({ data, dataKey, name, format = formatCompactMoney, height = 280 }) {
+const NARROW_QUERY = "(max-width: 520px)";
+const subscribeNarrow = (cb) => {
+  const mq = window.matchMedia(NARROW_QUERY);
+  mq.addEventListener("change", cb);
+  return () => mq.removeEventListener("change", cb);
+};
+const useNarrow = () => useSyncExternalStore(subscribeNarrow, () => window.matchMedia(NARROW_QUERY).matches);
+
+// Etiqueta de mes. Las etiquetas vienen como "Sep 2026".
+// - Normal: "Sep" y, solo en el primer punto y en enero, el año en una segunda línea.
+// - Angosto: inclinada 45° para que las 12 entren sin superponerse ("Ene 26" donde cambia el año).
+function MonthTick({ x, y, payload, fill, narrow }) {
+  const [mes, anio] = String(payload.value).split(" ");
+  const showYear = payload.index === 0 || mes === "Ene";
+  if (narrow) {
+    return (
+      <g transform={`translate(${x},${y})`}>
+        <text dy={10} textAnchor="end" transform="rotate(-45)" fill={fill} fontSize={11}>
+          {showYear ? `${mes} ${anio.slice(2)}` : mes}
+        </text>
+      </g>
+    );
+  }
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <text dy={14} textAnchor="middle" fill={fill} fontSize={12}>
+        {mes}
+      </text>
+      {showYear && (
+        <text dy={29} textAnchor="middle" fill={fill} fontSize={11}>
+          {anio}
+        </text>
+      )}
+    </g>
+  );
+}
+
+// Serie temporal mensual de una sola métrica.
+// axisFormat: valores del eje Y (compacto); tooltipFormat: valor exacto al pasar el cursor.
+export function TrendChart({ data, dataKey, name, axisFormat = moneyCompact, tooltipFormat = moneyFull, height = 280 }) {
   const { chart } = useTheme();
+  const narrow = useNarrow();
   const color = chart.series[0];
   return (
     <ResponsiveContainer width="100%" height={height}>
-      <AreaChart data={data} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
+      <AreaChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
         <defs>
           <linearGradient id="trendFill" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stopColor={color} stopOpacity={0.22} />
@@ -43,11 +86,20 @@ export function TrendChart({ data, dataKey, name, format = formatCompactMoney, h
           </linearGradient>
         </defs>
         <CartesianGrid vertical={false} stroke={chart.grid} />
-        <XAxis dataKey="label" tickLine={false} axisLine={{ stroke: chart.axis }} tick={axisTick(chart)} />
-        <YAxis tickLine={false} axisLine={false} tick={axisTick(chart)} tickFormatter={format} width={72} />
+        {/* interval={0}: mostrar siempre las 12 etiquetas (por defecto Recharts oculta las que se superponen) */}
+        <XAxis
+          dataKey="label"
+          interval={0}
+          height={narrow ? 48 : 40}
+          padding={{ left: 12, right: 12 }}
+          tickLine={false}
+          axisLine={{ stroke: chart.axis }}
+          tick={<MonthTick fill={chart.muted} narrow={narrow} />}
+        />
+        <YAxis tickLine={false} axisLine={false} tick={axisTick(chart)} tickFormatter={axisFormat} width={64} />
         <Tooltip
           cursor={{ stroke: chart.axis, strokeWidth: 1 }}
-          content={<ChartTooltip format={format} />}
+          content={<ChartTooltip format={tooltipFormat} />}
         />
         <Area
           type="monotone"
@@ -65,7 +117,8 @@ export function TrendChart({ data, dataKey, name, format = formatCompactMoney, h
 }
 
 // Barras horizontales de una sola métrica (ranking / categorías)
-export function HBarChart({ data, dataKey, name, format, height }) {
+// format: etiqueta junto a cada barra; tooltipFormat: valor exacto (por defecto, el mismo).
+export function HBarChart({ data, dataKey, name, format, tooltipFormat = format, height }) {
   const { chart } = useTheme();
   const h = height ?? Math.max(160, data.length * 40);
   return (
@@ -81,7 +134,7 @@ export function HBarChart({ data, dataKey, name, format, height }) {
           tick={axisTick(chart)}
           width={110}
         />
-        <Tooltip cursor={{ fill: chart.grid, opacity: 0.5 }} content={<ChartTooltip format={format} />} />
+        <Tooltip cursor={{ fill: chart.grid, opacity: 0.5 }} content={<ChartTooltip format={tooltipFormat} />} />
         <Bar
           dataKey={dataKey}
           name={name}

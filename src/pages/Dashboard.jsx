@@ -8,7 +8,9 @@ import StatCard from "../components/ui/StatCard";
 import Badge from "../components/ui/Badge";
 import { HBarChart, TrendChart } from "../components/charts/Charts";
 import { groupSum, ingresos, monthlyRevenue, ventasDelMes, ventasMesAnteriorAlDia } from "../utils/analytics";
-import { delta, formatCompactMoney, formatDate, formatMoney, formatNumber, formatPercent, sum } from "../utils/format";
+import { delta, formatDate, formatMoney, formatNumber, formatPercent, sum } from "../utils/format";
+
+const moneyCompact = (v) => formatMoney(v, { compact: true });
 import { ESTADOS } from "../data/seed";
 
 const ABIERTAS = ["Prospección", "Propuesta", "Negociación"];
@@ -88,11 +90,11 @@ export default function Dashboard() {
       </div>
 
       <div className="grid-2-1">
-        <ChartCard title="Ingresos mensuales" subtitle={`Ventas completadas · últimos 12 meses cerrados · ${formatCompactMoney(totalAnual)} en total`}>
+        <ChartCard title="Ingresos mensuales" subtitle={`Ventas completadas · últimos 12 meses cerrados · ${moneyCompact(totalAnual)} en total`}>
           {loading ? <div className="skeleton skeleton-chart" /> : <TrendChart data={revenue} dataKey="ingresos" name="Ingresos" />}
         </ChartCard>
         <ChartCard title="Pipeline por etapa" subtitle="Monto de oportunidades abiertas" action={<Link className="link" to="/oportunidades">Ver <ArrowRight size={14} /></Link>}>
-          {loading ? <div className="skeleton skeleton-chart" /> : <HBarChart data={pipelinePorEtapa} dataKey="value" name="Monto" format={formatCompactMoney} height={200} />}
+          {loading ? <div className="skeleton skeleton-chart" /> : <HBarChart data={pipelinePorEtapa} dataKey="value" name="Monto" format={moneyCompact} tooltipFormat={formatMoney} height={200} />}
         </ChartCard>
       </div>
 

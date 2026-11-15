@@ -84,6 +84,8 @@ La URL de la API se configura con la variable `VITE_API_URL` (ver `.env.example`
 | `npm run build` | Build de producción en `dist/` |
 | `npm run preview` | Sirve el build localmente |
 | `npm run lint` | Análisis estático |
+| `npm run build:pages` | Build para GitHub Pages (subpath `/dashboard-app/` + un `.html` por ruta) |
+| `npm run preview:pages` | Sirve ese build imitando a GitHub Pages (códigos 200/404 reales) |
 | `npm run deploy` | Publica la demo en GitHub Pages |
 
 ## Estructura

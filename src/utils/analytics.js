@@ -7,7 +7,7 @@ export function monthlyRevenue(ventas, n = 12, today = new Date()) {
   const buckets = [];
   for (let i = n; i >= 1; i--) {
     const d = new Date(today.getFullYear(), today.getMonth() - i, 1);
-    buckets.push({ key: monthKey(d), label: `${MONTHS[d.getMonth()]} ${String(d.getFullYear()).slice(2)}`, ingresos: 0, ventas: 0 });
+    buckets.push({ key: monthKey(d), label: `${MONTHS[d.getMonth()]} ${d.getFullYear()}`, ingresos: 0, ventas: 0 });
   }
   const index = Object.fromEntries(buckets.map((b, i) => [b.key, i]));
   for (const v of ventas) {

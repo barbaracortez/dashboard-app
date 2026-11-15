@@ -1,16 +1,32 @@
-const currency = new Intl.NumberFormat("es-AR", {
-  style: "currency",
-  currency: "USD",
-  maximumFractionDigits: 0,
-});
+const NBSP = " "; // evita que "US$" y el número queden en líneas distintas
+const integer = new Intl.NumberFormat("es-AR", { maximumFractionDigits: 0 });
+const oneDecimal = new Intl.NumberFormat("es-AR", { maximumFractionDigits: 1 });
 
-const compact = new Intl.NumberFormat("es-AR", {
-  notation: "compact",
-  maximumFractionDigits: 1,
-});
+/**
+ * Formato único de moneda para toda la app.
+ *   formatMoney(15440)                    -> "US$ 15.440"
+ *   formatMoney(8000, { compact: true })  -> "US$ 8 k"
+ *   formatMoney(297290, { compact: true })-> "US$ 297,3 k"
+ *   formatMoney(1.5e6, { compact: true }) -> "US$ 1,5 M"
+ * El modo compacto se arma a mano (no con notation: "compact") porque Intl en
+ * es-AR usa "K" mayúscula entre 1.000 y 9.999 y "k" minúscula desde 10.000.
+ */
+export function formatMoney(value, { compact = false } = {}) {
+  const n = Number(value) || 0;
+  const sign = n < 0 ? "-" : "";
+  const abs = Math.abs(n);
+  let body;
 
-export const formatMoney = (n) => currency.format(Number(n) || 0);
-export const formatCompactMoney = (n) => `US$ ${compact.format(Number(n) || 0)}`;
+  if (compact && Math.round(abs / 1e5) / 10 >= 1) {
+    body = `${oneDecimal.format(abs / 1e6)}${NBSP}M`;
+  } else if (compact && Math.round(abs) >= 1000) {
+    body = `${oneDecimal.format(abs / 1e3)}${NBSP}k`;
+  } else {
+    body = integer.format(Math.round(abs));
+  }
+  return `${sign}US$${NBSP}${body}`;
+}
+
 export const formatNumber = (n) => new Intl.NumberFormat("es-AR").format(Number(n) || 0);
 export const formatPercent = (n) => `${Math.round(Number(n) || 0)}%`;
 

@@ -12,7 +12,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "build:pages": "vite build --base=/dashboard-app/ && node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "build:pages": "vite build --base=/dashboard-app/ && node scripts/pages-postbuild.js",
+    "preview:pages": "node scripts/preview-pages.js",
     "deploy": "npm run build:pages && gh-pages -d dist -m \"Deploy demo\""
   },
   "homepage": "https://barbaracortez.github.io/dashboard-app/",
