@@ -1,97 +1,53 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
-import "./styles/App.css";
-import Sidebar from "./components/Sidebar";
-import Dashboard from "./components/Dashboard";
-import Ventas from "./components/Ventas";
-import Clientes from "./components/Clientes";
-import Reportes from "./components/Reportes";
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Leads from "./components/Leads";
-import Oportunidades from "./components/Oportunidades";
+import { lazy, Suspense } from "react";
+import { BrowserRouter, Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { useAuth } from "./context/AuthContext";
+import AppLayout from "./layout/AppLayout";
 import Login from "./pages/Login";
-import PrivateRoute from "./components/PrivateRouter";
 
-function App() {
-   const [ sidebarVisible, setSidebarVisible] = useState(true);
+// Las páginas se cargan bajo demanda para reducir el bundle inicial
+const Dashboard = lazy(() => import("./pages/Dashboard"));
+const Ventas = lazy(() => import("./pages/Ventas"));
+const Clientes = lazy(() => import("./pages/Clientes"));
+const Leads = lazy(() => import("./pages/Leads"));
+const Oportunidades = lazy(() => import("./pages/Oportunidades"));
+const Reportes = lazy(() => import("./pages/Reportes"));
+const Configuracion = lazy(() => import("./pages/Configuracion"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
-   useEffect(()=>{
-    const isMobile = window.innerWidth <= 768;
-    if (isMobile) {
-      setSidebarVisible(false);
-    }
-   }, []);
-   const toggleSidebar = () => {
-     setSidebarVisible(!sidebarVisible);
-   };
-  
+function RequireAuth({ children }) {
+  const { user } = useAuth();
+  const location = useLocation();
+  return user ? children : <Navigate to="/login" replace state={{ from: location.pathname }} />;
+}
+
+const page = (Component) => (
+  <Suspense fallback={<div className="page-loading" aria-busy="true" />}>
+    <Component />
+  </Suspense>
+);
+
+export default function App() {
   return (
     <BrowserRouter>
-      <div className="app">
-        {sidebarVisible && <Sidebar />}
-        <div className="content">
-          <Header onToggleSidebar={toggleSidebar} />
-          <div className="page-content">
-            <Routes>
-              <Route path="/login" element={<Login />} />
-
-              {/* Rutas privadas */}
-              <Route
-                path="/"
-                element={
-                  <PrivateRoute>
-                    <Dashboard />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/ventas"
-                element={
-                  <PrivateRoute>
-                    <Ventas />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/clientes"
-                element={
-                  <PrivateRoute>
-                    <Clientes />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/reportes"
-                element={
-                  <PrivateRoute>
-                    <Reportes />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/leads"
-                element={
-                  <PrivateRoute>
-                    <Leads />
-                  </PrivateRoute>
-                }
-              />
-              <Route
-                path="/oportunidades"
-                element={
-                  <PrivateRoute>
-                    <Oportunidades />
-                  </PrivateRoute>
-                }
-              />
-            </Routes>
-          </div>
-          <Footer />
-        </div>
-      </div>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route
+          element={
+            <RequireAuth>
+              <AppLayout />
+            </RequireAuth>
+          }
+        >
+          <Route index element={page(Dashboard)} />
+          <Route path="ventas" element={page(Ventas)} />
+          <Route path="clientes" element={page(Clientes)} />
+          <Route path="leads" element={page(Leads)} />
+          <Route path="oportunidades" element={page(Oportunidades)} />
+          <Route path="reportes" element={page(Reportes)} />
+          <Route path="configuracion" element={page(Configuracion)} />
+          <Route path="*" element={page(NotFound)} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
-
-export default App;
