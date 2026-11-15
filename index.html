@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nexo CRM — panel comercial demo con ventas, clientes, leads y oportunidades. Desarrollado con React + Vite." />
+    <meta name="theme-color" content="#2a78d6" />
+    <link rel="icon" type="image/svg+xml" href="/dashboard-app/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Nexo CRM · Panel comercial</title>
+    <script>
+      // Aplica el tema antes del primer render para evitar parpadeo
+      (function () {
+        try {
+          var t = localStorage.getItem("crm-demo-theme");
+          if (t !== "light" && t !== "dark") {
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          }
+          document.documentElement.dataset.theme = t;
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/dashboard-app/assets/index-DTsUJCkf.js"></script>
+    <link rel="modulepreload" crossorigin href="/dashboard-app/assets/react-DOEt5o-2.js">
+    <link rel="stylesheet" crossorigin href="/dashboard-app/assets/index-B-_QbXpZ.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
